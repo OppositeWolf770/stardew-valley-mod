@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " PP",
+    " P ",
+    "S  "
+  ],
+  "key": {
+    "P": {
+      "item": "stardewvalley:mineral_prismatic_shard"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "stardewvalley:dragontooth_cutlass"
+  }
+}

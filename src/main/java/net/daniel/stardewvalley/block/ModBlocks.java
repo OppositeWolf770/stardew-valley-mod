@@ -1,6 +1,7 @@
 package net.daniel.stardewvalley.block;
 
 import net.daniel.stardewvalley.StardewValley;
+import net.daniel.stardewvalley.block.custom.ScarecrowBlock;
 import net.daniel.stardewvalley.item.ModCreativeModeTab;
 import net.daniel.stardewvalley.item.ModItems;
 
@@ -22,7 +23,9 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, StardewValley.MODID);
 
     // Add Blocks below this comment
-    
+    public static final RegistryObject<Block> SCARECROW = registerBlock("scarecrow",
+            () -> new ScarecrowBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.STARDEW_TAB);
 
 
 

@@ -17,4 +17,11 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.ARTIFACT_LOST_BOOK.get());
         }
     };
+
+    public static final CreativeModeTab MINERALS_TAB = new CreativeModeTab("mineralstab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.QUARTZ.get());
+        }
+    };
 }
