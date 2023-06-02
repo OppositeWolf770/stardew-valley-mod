@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "stardewvalley:block/crystalarium",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "stardewvalley:block/crystalarium"
+    },
+    "facing=south": {
+      "model": "stardewvalley:block/crystalarium",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "stardewvalley:block/crystalarium",
+      "y": 270
+    }
+  }
+}

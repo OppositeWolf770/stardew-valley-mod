@@ -1,5 +1,4 @@
 {
-
   "item.stardewvalley.artifact_lost_book": "Lost Book",
   "item.stardewvalley.artifact_dwarf_scroll_1": "Dwarf Scroll I",
   "item.stardewvalley.artifact_dwarf_scroll_2": "Dwarf Scroll II",
@@ -83,6 +82,10 @@
   "item.stardewvalley.mineral_prismatic_shard": "Prismatic Shard",
 
   "item.stardewvalley.dragontooth_cutlass": "Dragontooth Cutlass",
+
+  "item.stardewvalley.crystalarium": "Crystalarium",
+
+  "container.stardewvalley.crystalarium": "Crystalarium",
 
   "itemGroup.stardewtab": "Stardew Valley",
   "itemGroup.artifactstab": "Artifacts",
