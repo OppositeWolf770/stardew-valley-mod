@@ -18,7 +18,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 
-// TODO - Finish adding the hitboxes for the scarecrow directions
+// TODO - Finish adding the hitboxes for the you are gay
 public class MergeFile extends Block {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     protected static final VoxelShape EAST_SHAPE = Shapes.or(
