@@ -25,6 +25,23 @@
   "item.stardewvalley.artifact_rusty_spur": "Rusty Spur",
   "item.stardewvalley.artifact_strange_doll_green": "Strange Doll",
   "item.stardewvalley.artifact_strange_doll_red": "Strange Doll",
+  "item.stardewvalley.artifact_amphibian_fossil": "Amphibian Fossil",
+  "item.stardewvalley.artifact_ancient_drum": "Ancient Drum",
+  "item.stardewvalley.artifact_prehistoric_scapula": "Prehistoric Scapula",
+  "item.stardewvalley.artifact_prehistoric_rib": "Prehistoric Rib",
+  "item.stardewvalley.artifact_prehistoric_handaxe": "Prehistoric Handaxe",
+  "item.stardewvalley.artifact_palm_fossil": "Palm Fossil",
+  "item.stardewvalley.artifact_nautilus_fossil": "Nautilus Fossil",
+  "item.stardewvalley.artifact_golden_relic": "Golden Relic",
+  "item.stardewvalley.artifact_golden_mask": "Golden Mask",
+  "item.stardewvalley.artifact_dwarvish_helm": "Dwarvish Helm",
+  "item.stardewvalley.artifact_dwarf_gadget": "Dwarf Gadget",
+  "item.stardewvalley.artifact_prehistoric_skull": "Prehistoric Skull",
+  "item.stardewvalley.artifact_prehistoric_tibia": "Prehistoric Tibia",
+  "item.stardewvalley.artifact_prehistoric_vertebra": "Prehistoric Vertebra",
+  "item.stardewvalley.artifact_skeletal_hand": "Skeletal Hand",
+  "item.stardewvalley.artifact_skeletal_tail": "Skeletal Tail",
+  "item.stardewvalley.artifact_trilobite": "Trilobite",
 
   "item.stardewvalley.mineral_quartz": "Quartz",
   "item.stardewvalley.mineral_slate": "Slate",
@@ -102,7 +119,7 @@
   "item.stardewvalley.slingshot": "Slingshot",
   "item.stardewvalley.master_slingshot": "Master Slingshot",
   "item.stardewvalley.galaxy_slingshot": "Galaxy Slingshot",
-  "item.stardewvalley.elliots.slingshot": "Elliot's Pencil",
+  "item.stardewvalley.elliots_pencil": "Elliot's Pencil",
   "item.stardewvalley.marus_wrench": "Maru's Wrench",
   "item.stardewvalley.harveys_mallet": "Harvey's Mallet",
   "item.stardewvalley.pennys_fryer": "Penny's Fryer",
@@ -133,11 +150,13 @@
   "item.stardewvalley.silver_saber": "Silver Saber",
   "item.stardewvalley.rusty_sword": "Rusty Sword",
 
-  "item.stardewvalley.crystalarium": "Crystalarium",
+  "block.stardewvalley.crystalarium": "Crystalarium",
+  "block.stardewvalley.scarecrow": "Scarecrow",
 
   "container.stardewvalley.crystalarium": "Crystalarium",
 
   "itemGroup.stardewtab": "Stardew Valley",
   "itemGroup.artifactstab": "Artifacts",
-  "itemGroup.mineralstab": "Minerals"
+  "itemGroup.mineralstab": "Minerals",
+  "itemGroup.weaponstab": "Weapons"
 }
