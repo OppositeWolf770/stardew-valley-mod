@@ -16,16 +16,16 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class DragontoothCutlassItem extends SwordItem {
+public class RustySwordItem extends SwordItem {
 
-    public DragontoothCutlassItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+    public RustySwordItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
 
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
             pTooltipComponents.add(Component.literal
-                            ("The blade was forged from a magical tooth.")
+                            ("A rusty, dull old sword. ")
                     .withStyle(StardewValley.tooltipColor)
             );
         } else {

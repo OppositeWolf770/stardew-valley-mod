@@ -16,9 +16,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class DragontoothCutlassItem extends SwordItem {
+public class DragontoothShivItem extends SwordItem {
 
-    public DragontoothCutlassItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+    public DragontoothShivItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
 
