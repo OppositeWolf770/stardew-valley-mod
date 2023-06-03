@@ -18,9 +18,6 @@ public class ModMinerals {
 
      */
 
-    // TODO Alphabetize these
-
-
     public static final RegistryObject<Item> QUARTZ = ITEMS.register("mineral_quartz",
             () -> new QuartzItem(new Item.Properties().tab(ModCreativeModeTab.MINERALS_TAB)));
 

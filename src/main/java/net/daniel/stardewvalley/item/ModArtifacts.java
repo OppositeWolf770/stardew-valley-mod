@@ -113,7 +113,6 @@ public class ModArtifacts {
             () -> new ArtifactGoldenRelicItem(new Item.Properties().tab(ModCreativeModeTab.ARTIFACTS_TAB)));
 
     // Lost Book
-    //TODO DANIEL - Why in STARDEW_TAB?
     public static final RegistryObject<Item> ARTIFACT_LOST_BOOK = ITEMS.register("artifact_lost_book",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.STARDEW_TAB)));
 

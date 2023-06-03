@@ -22,8 +22,6 @@ public class ModWeapons {
 
      */
 
-    // TODO Alphabetize these
-
     public static final RegistryObject<Item> DRAGONTOOTH_CUTLASS = ITEMS.register("dragontooth_cutlass",
             () -> new DragontoothCutlassItem(new Tier() {
                 @Override
