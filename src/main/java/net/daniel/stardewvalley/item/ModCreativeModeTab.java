@@ -14,6 +14,11 @@ public class ModCreativeModeTab {
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.ARTIFACT_CHICKEN_STATUE.get());
         }
+        @Override
+        public void fillItemList(NonNullList<ItemStack> items) {
+            super.fillItemList(items);
+            items.sort(Comparator.comparing(e -> e.getDisplayName().getString()));
+        }
     };
 
     public static final CreativeModeTab ARTIFACTS_TAB = new CreativeModeTab("artifactstab") {
@@ -33,12 +38,22 @@ public class ModCreativeModeTab {
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.QUARTZ.get());
         }
+        @Override
+        public void fillItemList(NonNullList<ItemStack> items) {
+            super.fillItemList(items);
+            items.sort(Comparator.comparing(e -> e.getDisplayName().getString()));
+        }
     };
 
     public static final CreativeModeTab WEAPONS_TAB = new CreativeModeTab("weaponstab") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.GALAXY_SWORD.get());
+        }
+        @Override
+        public void fillItemList(NonNullList<ItemStack> items) {
+            super.fillItemList(items);
+            items.sort(Comparator.comparing(e -> e.getDisplayName().getString()));
         }
     };
 }

@@ -118,7 +118,6 @@ public class ModItems {
             () -> new ArtifactGoldenRelicItem(new Item.Properties().tab(ModCreativeModeTab.ARTIFACTS_TAB)));
 
     // Lost Book
-    //TODO DANIEL - Why in STARDEW_TAB?
     public static final RegistryObject<Item> ARTIFACT_LOST_BOOK = ITEMS.register("artifact_lost_book",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.STARDEW_TAB)));
 
@@ -206,8 +205,6 @@ public class ModItems {
         Weapons
 
      */
-
-    // TODO Alphabetize these
 
     public static final RegistryObject<Item> DRAGONTOOTH_CUTLASS = ITEMS.register("dragontooth_cutlass",
             () -> new DragontoothCutlassItem(new Tier() {
@@ -1767,8 +1764,6 @@ public class ModItems {
         Minerals
 
      */
-
-    // TODO Alphabetize these
 
 
     public static final RegistryObject<Item> QUARTZ = ITEMS.register("mineral_quartz",
