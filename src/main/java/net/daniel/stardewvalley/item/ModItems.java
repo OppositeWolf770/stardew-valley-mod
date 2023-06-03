@@ -271,6 +271,130 @@ public class ModItems {
                     .tab(ModCreativeModeTab.STARDEW_TAB)
             ));
 
+    public static final RegistryObject<Item> DRAGONTOOTH_CLUB = ITEMS.register("dragontooth_club",
+            () -> new DragontoothCutlassItem(new Tier() {
+                @Override
+                public int getUses() {
+                    return 2000;
+                }
+
+                @Override
+                public float getSpeed() { return 12.0F; }
+
+                @Override
+                public float getAttackDamageBonus() {
+                    return 0;
+                }
+
+                @Override
+                public int getLevel() { return 4; }
+
+                @Override
+                public int getEnchantmentValue() {
+                    return 2;
+                }
+
+                @Override
+                public Ingredient getRepairIngredient() {
+                    return Ingredient.of(ModItems.PRISMATIC_SHARD.get());
+                }
+            }, 11, -2.2F, new Item.Properties()
+                    .tab(ModCreativeModeTab.STARDEW_TAB)
+            ));
+
+    public static final RegistryObject<Item> DRAGONTOOTH_SHIV = ITEMS.register("dragontooth_shiv",
+            () -> new DragontoothCutlassItem(new Tier() {
+                @Override
+                public int getUses() {
+                    return 2000;
+                }
+
+                @Override
+                public float getSpeed() { return 12.0F; }
+
+                @Override
+                public float getAttackDamageBonus() {
+                    return 0;
+                }
+
+                @Override
+                public int getLevel() { return 4; }
+
+                @Override
+                public int getEnchantmentValue() {
+                    return 2;
+                }
+
+                @Override
+                public Ingredient getRepairIngredient() {
+                    return Ingredient.of(ModItems.PRISMATIC_SHARD.get());
+                }
+            }, 11, -2.2F, new Item.Properties()
+                    .tab(ModCreativeModeTab.STARDEW_TAB)
+            ));
+
+    public static final RegistryObject<Item> OSSIFIED_BLADE = ITEMS.register("ossified_blade",
+            () -> new DragontoothCutlassItem(new Tier() {
+                @Override
+                public int getUses() {
+                    return 2000;
+                }
+
+                @Override
+                public float getSpeed() { return 12.0F; }
+
+                @Override
+                public float getAttackDamageBonus() {
+                    return 0;
+                }
+
+                @Override
+                public int getLevel() { return 4; }
+
+                @Override
+                public int getEnchantmentValue() {
+                    return 2;
+                }
+
+                @Override
+                public Ingredient getRepairIngredient() {
+                    return Ingredient.of(ModItems.PRISMATIC_SHARD.get());
+                }
+            }, 11, -2.2F, new Item.Properties()
+                    .tab(ModCreativeModeTab.STARDEW_TAB)
+            ));
+
+    public static final RegistryObject<Item> IRIDIUM_NEEDLE = ITEMS.register("iridium_needle",
+            () -> new DragontoothCutlassItem(new Tier() {
+                @Override
+                public int getUses() {
+                    return 2000;
+                }
+
+                @Override
+                public float getSpeed() { return 12.0F; }
+
+                @Override
+                public float getAttackDamageBonus() {
+                    return 0;
+                }
+
+                @Override
+                public int getLevel() { return 4; }
+
+                @Override
+                public int getEnchantmentValue() {
+                    return 2;
+                }
+
+                @Override
+                public Ingredient getRepairIngredient() {
+                    return Ingredient.of(ModItems.PRISMATIC_SHARD.get());
+                }
+            }, 11, -2.2F, new Item.Properties()
+                    .tab(ModCreativeModeTab.STARDEW_TAB)
+            ));
+
 
 
     /*
