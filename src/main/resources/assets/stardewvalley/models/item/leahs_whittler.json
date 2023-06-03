@@ -2,5 +2,56 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "stardewvalley:item/leahs_whittler"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        90,
+        25
+      ],
+      "translation": [
+        0,
+        4,
+        0
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        190,
+        90,
+        180
+      ],
+      "translation": [
+        2,
+        2,
+        0
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        -90,
+        -25
+      ],
+      "translation": [
+        0,
+        4,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -190,
+        -90,
+        -180
+      ],
+      "translation": [
+        2,
+        2,
+        0
+      ]
+    }
   }
+}
 }
