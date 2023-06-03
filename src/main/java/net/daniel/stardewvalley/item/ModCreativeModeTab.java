@@ -24,4 +24,11 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.QUARTZ.get());
         }
     };
+
+    public static final CreativeModeTab WEAPONS_TAB = new CreativeModeTab("weaponstab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.GALAXY_SWORD.get());
+        }
+    };
 }
