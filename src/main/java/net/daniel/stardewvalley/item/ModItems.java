@@ -56,6 +56,7 @@ public class ModItems {
 
 
     // Lost Book
+    //TODO Daniel should this be in ARTIFACTS_TAB NOT STARDEW_TAB?
     public static final RegistryObject<Item> ARTIFACT_LOST_BOOK = ITEMS.register("artifact_lost_book",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.STARDEW_TAB)));
 
