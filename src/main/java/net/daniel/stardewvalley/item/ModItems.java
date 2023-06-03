@@ -23,6 +23,8 @@ public class ModItems {
 
     */
 
+    // TODO Alphabatize these items
+
     // Dwarf Scroll I
     public static final RegistryObject<Item> ARTIFACT_DWARF_SCROLL_1 = ITEMS.register("artifact_dwarf_scroll_1",
             () -> new ArtifactDwarfScroll1Item(new Item.Properties().tab(ModCreativeModeTab.ARTIFACTS_TAB)));
@@ -208,6 +210,8 @@ public class ModItems {
         Weapons
 
      */
+
+    // TODO Alphabetize these
 
     public static final RegistryObject<Item> DRAGONTOOTH_CUTLASS = ITEMS.register("dragontooth_cutlass",
             () -> new DragontoothCutlassItem(new Tier() {
@@ -1768,6 +1772,7 @@ public class ModItems {
 
      */
 
+    // TODO Alphabetize these
 
 
     public static final RegistryObject<Item> QUARTZ = ITEMS.register("mineral_quartz",
