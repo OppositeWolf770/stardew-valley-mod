@@ -2,6 +2,7 @@ package net.daniel.stardewvalley.item;
 
 import net.daniel.stardewvalley.StardewValley;
 import net.daniel.stardewvalley.item.custom.weapons.DragontoothCutlassItem;
+import net.daniel.stardewvalley.item.custom.weapons.InfinityDaggerItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -54,7 +55,7 @@ public class ModWeapons {
             ));
 
     public static final RegistryObject<Item> INFINITY_DAGGER = ITEMS.register("infinity_dagger",
-            () -> new DragontoothCutlassItem(new Tier() {
+            () -> new InfinityDaggerItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
