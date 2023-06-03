@@ -240,9 +240,6 @@ public class ModItems {
                     .tab(ModCreativeModeTab.STARDEW_TAB)
             ));
 
-    public static final RegistryObject<Item> CUSTOM_SWORD = ITEMS.register("custom_sword",
-            () -> new SwordItem(Tiers.IRON, 3, -2.4F, new Item.Properties()
-                    .tab(ModCreativeModeTab.STARDEW_TAB)));
 
 
 
