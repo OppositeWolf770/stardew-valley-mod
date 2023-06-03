@@ -56,4 +56,16 @@ public class ModCreativeModeTab {
             items.sort(Comparator.comparing(e -> e.getDisplayName().getString()));
         }
     };
+
+    public static final CreativeModeTab TOOLS_TAB = new CreativeModeTab("toolstab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModTools.COPPER_AXE.get());
+        }
+        @Override
+        public void fillItemList(NonNullList<ItemStack> items) {
+            super.fillItemList(items);
+            items.sort(Comparator.comparing(e -> e.getDisplayName().getString()));
+        }
+    };
 }
