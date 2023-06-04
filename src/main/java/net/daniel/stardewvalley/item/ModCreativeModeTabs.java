@@ -8,7 +8,7 @@ import java.util.Comparator;
 
 
 
-public class ModCreativeModeTab {
+public class ModCreativeModeTabs {
     public static final CreativeModeTab STARDEW_TAB = new CreativeModeTab("stardewtab") {
         @Override
         public ItemStack makeIcon() {
