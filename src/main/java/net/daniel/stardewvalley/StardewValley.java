@@ -19,6 +19,8 @@ public class StardewValley {
     public static final String MODID = "stardewvalley";
     private static final Logger LOGGER = LogUtils.getLogger();
 
+
+    // Color configs and shift message for tooltips
     public static ChatFormatting tooltipColor = ChatFormatting.AQUA;
     public static ChatFormatting shiftTooltipColor = ChatFormatting.GOLD;
     public static String shiftMessage = "Press SHIFT to view description";
