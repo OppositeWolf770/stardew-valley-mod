@@ -50,7 +50,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> INFINITY_DAGGER = ITEMS.register("infinity_dagger",
@@ -81,7 +81,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> DRAGONTOOTH_CLUB = ITEMS.register("dragontooth_club",
@@ -112,7 +112,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> DRAGONTOOTH_SHIV = ITEMS.register("dragontooth_shiv",
@@ -143,7 +143,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> OSSIFIED_BLADE = ITEMS.register("ossified_blade",
@@ -174,7 +174,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> IRIDIUM_NEEDLE = ITEMS.register("iridium_needle",
@@ -205,7 +205,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> INFINITY_BLADE = ITEMS.register("infinity_blade",
@@ -236,7 +236,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> INFINITY_GAVEL = ITEMS.register("infinity_gavel",
@@ -267,7 +267,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> DWARF_HAMMER = ITEMS.register("dwarf_hammer",
@@ -298,7 +298,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> DWARF_SWORD = ITEMS.register("dwarf_sword",
@@ -329,7 +329,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> GOLDEN_SCYTHE = ITEMS.register("golden_scythe",
@@ -360,7 +360,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> TEMPERED_BROADSWORD = ITEMS.register("tempered_broadsword",
@@ -391,7 +391,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> BROKEN_TRIDENT = ITEMS.register("broken_trident",
@@ -422,7 +422,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> STEEL_FALCHION = ITEMS.register("steel_falchion",
@@ -453,7 +453,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> RAPIER = ITEMS.register("rapier",
@@ -484,7 +484,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> YETI_TOOTH = ITEMS.register("yeti_tooth",
@@ -515,7 +515,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> ABBYS_PLANCHETTE = ITEMS.register("abbys_planchette",
@@ -546,7 +546,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> SLINGSHOT = ITEMS.register("slingshot",
@@ -577,7 +577,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> MASTER_SLINGSHOT = ITEMS.register("master_slingshot",
@@ -608,7 +608,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> GALAXY_SLINGSHOT = ITEMS.register("galaxy_slingshot",
@@ -639,7 +639,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> ELLIOTS_PENCIL = ITEMS.register("elliots_pencil",
@@ -670,7 +670,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> MARUS_WRENCH = ITEMS.register("marus_wrench",
@@ -701,7 +701,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> HARVEYS_MALLET = ITEMS.register("harveys_mallet",
@@ -732,7 +732,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> PENNYS_FRYER = ITEMS.register("pennys_fryer",
@@ -763,7 +763,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> LEAHS_WHITTLER = ITEMS.register("leahs_whittler",
@@ -794,7 +794,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> FEMUR = ITEMS.register("femur",
@@ -825,7 +825,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> GALAXY_DAGGER = ITEMS.register("galaxy_dagger",
@@ -856,7 +856,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> WIND_SPIRE = ITEMS.register("wind_spire",
@@ -887,7 +887,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> CRYSTAL_DAGGER = ITEMS.register("crystal_dagger",
@@ -918,7 +918,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> ELF_BLADE = ITEMS.register("elf_blade",
@@ -949,7 +949,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> SHADOW_DAGGER = ITEMS.register("shadow_dagger",
@@ -980,7 +980,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> BURGLARS_SHANK = ITEMS.register("burglars_shank",
@@ -1011,7 +1011,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> IRON_DIRK = ITEMS.register("iron_dirk",
@@ -1042,7 +1042,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> CARVING_KNIFE = ITEMS.register("carving_knife",
@@ -1073,7 +1073,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> FOREST_SWORD = ITEMS.register("forest_sword",
@@ -1104,7 +1104,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> NEPTUNES_GLAIVE = ITEMS.register("neptunes_glaive",
@@ -1135,7 +1135,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> INSECT_HEAD = ITEMS.register("insect_head",
@@ -1166,7 +1166,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
 
@@ -1198,7 +1198,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> STEEL_SMALLSWORD = ITEMS.register("steel_smallsword",
@@ -1229,7 +1229,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> CLAYMORE = ITEMS.register("claymore",
@@ -1260,7 +1260,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> LAVA_KATANA = ITEMS.register("lava_katana",
@@ -1291,7 +1291,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> OBSIDIAN_EDGE = ITEMS.register("obsidian_edge",
@@ -1322,7 +1322,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> TEMPLARS_BLADE = ITEMS.register("templars_blade",
@@ -1353,7 +1353,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> IRON_EDGE = ITEMS.register("iron_edge",
@@ -1384,7 +1384,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> BONE_SWORD = ITEMS.register("bone_sword",
@@ -1415,7 +1415,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> GALAXY_SWORD = ITEMS.register("galaxy_sword",
@@ -1446,7 +1446,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> HOLY_BLADE = ITEMS.register("holy_blade",
@@ -1477,7 +1477,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> DARK_SWORD = ITEMS.register("dark_sword",
@@ -1508,7 +1508,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> SILVER_SABER = ITEMS.register("silver_saber",
@@ -1539,7 +1539,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static final RegistryObject<Item> RUSTY_SWORD = ITEMS.register("rusty_sword",
@@ -1570,7 +1570,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB)
+                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
             ));
 
     public static void  register(IEventBus eventBus) { ITEMS.register(eventBus); }

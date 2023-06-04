@@ -3,7 +3,7 @@ package net.daniel.stardewvalley.block;
 import net.daniel.stardewvalley.StardewValley;
 import net.daniel.stardewvalley.block.custom.CrystalariumBlock;
 import net.daniel.stardewvalley.block.custom.ScarecrowBlock;
-import net.daniel.stardewvalley.item.ModCreativeModeTab;
+import net.daniel.stardewvalley.item.ModCreativeModeTabs;
 import net.daniel.stardewvalley.item.ModItems;
 
 import net.minecraft.world.item.BlockItem;
@@ -26,11 +26,11 @@ public class ModBlocks {
     // Add Blocks below this comment
     public static final RegistryObject<Block> SCARECROW = registerBlock("scarecrow",
             () -> new ScarecrowBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.STARDEW_TAB);
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTabs.STARDEW_TAB);
 
     public static final RegistryObject<Block> CRYSTALARIUM = registerBlock("crystalarium",
             () -> new CrystalariumBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.STARDEW_TAB);
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTabs.STARDEW_TAB);
 
 
 
