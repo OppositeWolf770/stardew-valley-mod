@@ -1,0 +1,7 @@
+{
+	"parent": "stardewvalley:block/test_block",
+	"textures": {
+		"bottom": "stardewvalley:block/test_block_bottom",
+		"top": "stardewvalley:block/test_block_top"
+	}
+}

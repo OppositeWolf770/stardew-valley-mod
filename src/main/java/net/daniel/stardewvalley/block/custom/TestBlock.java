@@ -16,29 +16,28 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.*;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
-import org.jetbrains.annotations.TestOnly;
 
 
 // TODO - Finish adding the hitboxes for the scarecrow directions
-public class ScarecrowBlock extends Block {
+public class TestBlock extends Block {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
-    protected static final VoxelShape EAST_SHAPE = Shapes.or(
-            Block.box(7, 0, 7, 9, 9, 9),
-            Block.box(5, 9, 4, 11, 16, 12)
-    );
+    protected static final VoxelShape EAST_SHAPE = Block.box(1, 0, 1, 15, 16, 15);
     protected static final VoxelShape WEST_SHAPE = Block.box(1, 0, 1, 15, 16, 15);
     protected static final VoxelShape NORTH_SHAPE = Block.box(1, 0, 1, 15, 16, 15);
     protected static final VoxelShape SOUTH_SHAPE = Block.box(1, 0, 1, 15, 16, 15);
 
-    public ScarecrowBlock(Properties pProperties) {
+    public TestBlock(Properties pProperties) {
         super(pProperties);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.SOUTH).setValue(HALF, DoubleBlockHalf.LOWER));
     }
@@ -147,6 +146,4 @@ public class ScarecrowBlock extends Block {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(HALF, FACING);
     }
-
-
 }
