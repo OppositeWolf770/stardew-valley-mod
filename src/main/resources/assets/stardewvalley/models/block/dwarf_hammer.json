@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "stardewvalley:item/dragontooth_shiv"
-  }
-}
