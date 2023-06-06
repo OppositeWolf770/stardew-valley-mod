@@ -1,5 +1,7 @@
 package net.daniel.stardewvalley;
 
+import net.daniel.stardewvalley.item.ModItems;
+import net.daniel.stardewvalley.item.ModMinerals;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
@@ -16,8 +18,8 @@ public enum ModTiers implements Tier {
         return Ingredient.of(Items.IRON_INGOT);
     }),
     IRIDIUM(4, 2031, 9.0F, 4.0F, 15, () -> {
-        return Ingredient.of(Items.IRIDIUM_INGOT);
-    }),
+        return Ingredient.of(ModMinerals.IRIDIUM_BAR.get());
+    });
 
     private final int level;
     private final int uses;
