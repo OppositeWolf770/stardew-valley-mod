@@ -24,13 +24,13 @@ public class ModTools {
             () -> new HoeItem(ModTiers.COPPER, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
-            () -> new HoeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new HoeItem(ModTiers.STEEL, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> GOLD_HOE = ITEMS.register("gold_hoe",
-            () -> new HoeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new HoeItem(Tiers.GOLD, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> IRIDIUM_HOE = ITEMS.register("iridium_hoe",
-            () -> new HoeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new HoeItem(ModTiers.IRIDIUM, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
 
 
@@ -40,16 +40,16 @@ public class ModTools {
             () -> new AxeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe",
-            () -> new AxeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new AxeItem(ModTiers.COPPER, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe",
-            () -> new AxeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new AxeItem(ModTiers.STEEL, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> GOLD_AXE = ITEMS.register("gold_axe",
-            () -> new AxeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new AxeItem(Tiers.GOLD, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> IRIDIUM_AXE = ITEMS.register("iridium_axe",
-            () -> new AxeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new AxeItem(ModTiers.IRIDIUM, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
 
 
@@ -58,16 +58,16 @@ public class ModTools {
             () -> new PickaxeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
-            () -> new PickaxeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new PickaxeItem(ModTiers.COPPER, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
-            () -> new PickaxeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new PickaxeItem(ModTiers.STEEL, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> GOLD_PICKAXE = ITEMS.register("gold_pickaxe",
-            () -> new PickaxeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new PickaxeItem(Tiers.GOLD, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> IRIDIUM_PICKAXE = ITEMS.register("iridium_pickaxe",
-            () -> new PickaxeItem(Tiers.STONE, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new PickaxeItem(ModTiers.Iridium, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
 
 

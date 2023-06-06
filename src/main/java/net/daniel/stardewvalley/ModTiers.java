@@ -12,7 +12,12 @@ public enum ModTiers implements Tier {
     COPPER(1, 131, 4.0F, 1.0F, 5, () -> {
         return Ingredient.of(Items.COPPER_INGOT);
     }),
-    ;
+    STEEL(2, 250, 6.0F, 2.0F, 14, () -> {
+        return Ingredient.of(Items.IRON_INGOT);
+    }),
+    IRIDIUM(4, 2031, 9.0F, 4.0F, 15, () -> {
+        return Ingredient.of(Items.IRIDIUM_INGOT);
+    }),
 
     private final int level;
     private final int uses;
