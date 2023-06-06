@@ -67,7 +67,7 @@ public class ModTools {
             () -> new PickaxeItem(Tiers.GOLD, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
     public static final RegistryObject<Item> IRIDIUM_PICKAXE = ITEMS.register("iridium_pickaxe",
-            () -> new PickaxeItem(ModTiers.Iridium, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
+            () -> new PickaxeItem(ModTiers.IRIDIUM, 0, 0, (new Item.Properties()).tab(ModCreativeModeTabs.TOOLS_TAB)));
 
 
 
