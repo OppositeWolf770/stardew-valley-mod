@@ -1,20 +1,10 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " XX",
-    " S ",
-    " S "
-  ],
-  "key": {
-    "X": {
-      "tag": "minecraft:stone_tool_materials"
-    },
-    "S": {
-      "item": "minecraft:stick"
-    }
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "iron_ingot",
+  "ingredient": {
+    "item": "minecraft:iron_ore"
   },
-  "result": {
-    "count": 1,
-    "item": "stardewvalley:hoe"
-  }
+  "result": "stardewvalley:iridium_bar"
 }
