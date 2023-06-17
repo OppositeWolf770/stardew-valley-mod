@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "stardewvalley:block/cauliflower_stage_1"
+  }
+}
