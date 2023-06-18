@@ -1,4 +1,4 @@
-package net.daniel.stardewvalley.item.custom.artifacts;
+package net.daniel.stardewvalley.item.custom;
 
 import net.daniel.stardewvalley.StardewValley;
 import net.minecraft.client.gui.screens.Screen;
@@ -11,17 +11,18 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class ArtifactAncientDrumItem extends Item {
-    public ArtifactAncientDrumItem(Properties pProperties) {
+public class MineralItem extends Item {
+    String toolTip;
+    public MineralItem(Properties pProperties, String toolTip) {
         super(pProperties);
+        this.toolTip = toolTip;
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
             pTooltipComponents.add(Component.literal
-                    ("It's a drum made from wood and animal skin. It has a low, reverberating tone.")
-                    .withStyle(StardewValley.tooltipColor)
+                    (toolTip).withStyle(StardewValley.tooltipColor)
             );
         } else {
             pTooltipComponents.add(Component.literal(StardewValley.shiftMessage).withStyle(StardewValley.shiftTooltipColor));

@@ -1,4 +1,4 @@
-package net.daniel.stardewvalley.item.custom.minerals;
+package net.daniel.stardewvalley.item.custom;
 
 import net.daniel.stardewvalley.StardewValley;
 import net.minecraft.client.gui.screens.Screen;
@@ -11,17 +11,18 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class HematiteItem extends Item {
-    public HematiteItem(Properties pProperties) {
+public class ArtifactItem extends Item {
+    String toolTip;
+    public ArtifactItem(Properties pProperties, String toolTip) {
         super(pProperties);
+        this.toolTip = toolTip;
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
             pTooltipComponents.add(Component.literal
-                    ("An iron-based Mineral with interesting magnetic properties.")
-                    .withStyle(StardewValley.tooltipColor)
+                    (toolTip).withStyle(StardewValley.tooltipColor)
             );
         } else {
             pTooltipComponents.add(Component.literal(StardewValley.shiftMessage).withStyle(StardewValley.shiftTooltipColor));
