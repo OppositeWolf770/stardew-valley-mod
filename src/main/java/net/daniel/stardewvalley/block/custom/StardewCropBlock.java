@@ -1,6 +1,5 @@
 package net.daniel.stardewvalley.block.custom;
 
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -12,11 +11,6 @@ public class StardewCropBlock extends CropBlock {
 
     public StardewCropBlock(Properties pProperties) {
         super(pProperties);
-    }
-
-    @Override
-    protected ItemLike getBaseSeedId() {
-        return super.getBaseSeedId();
     }
 
     @Override

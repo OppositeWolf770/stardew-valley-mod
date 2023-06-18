@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "stardewvalley:cauliflower_crop",
+                  "properties": {
+                    "age": "6"
+                  }
+                }
+              ],
+              "name": "stardewvalley:cauliflower"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewvalley:cauliflower"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ]
+}

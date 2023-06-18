@@ -1,0 +1,29 @@
+package net.daniel.stardewvalley.item;
+
+import net.daniel.stardewvalley.StardewValley;
+import net.daniel.stardewvalley.block.ModBlocks;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+public class ModCrops {
+    public static final DeferredRegister<Item> ITEMS =
+            DeferredRegister.create(ForgeRegistries.ITEMS, StardewValley.MODID);
+
+
+    public static final RegistryObject<Item> CAULIFLOWER_SEEDS = ITEMS.register("cauliflower_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.CAULIFLOWER_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.CROPS_TAB)));
+
+    public static final RegistryObject<Item> CAULIFLOWER = ITEMS.register("cauliflower",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())
+                    .tab(ModCreativeModeTab.CROPS_TAB)));
+
+
+
+    public static void register(IEventBus eventBus) { ITEMS.register(eventBus); }
+}
