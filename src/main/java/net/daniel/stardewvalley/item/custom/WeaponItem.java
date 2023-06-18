@@ -1,4 +1,4 @@
-package net.daniel.stardewvalley.item.custom.weapons;
+package net.daniel.stardewvalley.item.custom;
 
 import com.google.common.collect.Multimap;
 import net.daniel.stardewvalley.StardewValley;
@@ -16,17 +16,18 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class GalaxyDaggerItem extends SwordItem {
+public class WeaponItem extends SwordItem {
+    String toolTip;
 
-    public GalaxyDaggerItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+    public WeaponItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties, String toolTip) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
+        this.toolTip = toolTip;
     }
 
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
             pTooltipComponents.add(Component.literal
-                            ("It's unlike anything you've seen.")
-                    .withStyle(StardewValley.tooltipColor)
+                    (toolTip).withStyle(StardewValley.tooltipColor)
             );
         } else {
             pTooltipComponents.add(Component.literal(StardewValley.shiftMessage).withStyle(StardewValley.shiftTooltipColor));

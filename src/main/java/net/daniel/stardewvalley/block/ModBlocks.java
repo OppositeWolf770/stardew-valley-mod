@@ -2,10 +2,10 @@ package net.daniel.stardewvalley.block;
 
 import net.daniel.stardewvalley.StardewValley;
 import net.daniel.stardewvalley.block.custom.CrystalariumBlock;
-import net.daniel.stardewvalley.block.custom.StardewCropBlock;
 import net.daniel.stardewvalley.block.custom.ScarecrowBlock;
-import net.daniel.stardewvalley.block.custom.crops.CauliflowerCropBlock;
+import net.daniel.stardewvalley.block.custom.crops.ModCropBlock;
 import net.daniel.stardewvalley.item.ModCreativeModeTab;
+import net.daniel.stardewvalley.item.ModCrops;
 import net.daniel.stardewvalley.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -34,8 +34,14 @@ public class ModBlocks {
             () -> new CrystalariumBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.STARDEW_TAB);
 
+
+    // Crops
     public static final RegistryObject<Block> CAULIFLOWER_CROP = BLOCKS.register("cauliflower_crop",
-            () -> new CauliflowerCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+            () -> new ModCropBlock(
+                    BlockBehaviour.Properties.copy(Blocks.WHEAT),
+                    ModCrops.CAULIFLOWER_SEEDS.get()
+            )
+    );
 
 
 
