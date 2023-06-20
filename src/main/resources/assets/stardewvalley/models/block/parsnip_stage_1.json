@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "stardewvalley:block/parsnip_stage_1"
+  },
+  "render_type": "cutout"
+}
