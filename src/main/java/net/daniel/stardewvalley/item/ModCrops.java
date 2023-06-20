@@ -3,6 +3,7 @@ package net.daniel.stardewvalley.item;
 import net.daniel.stardewvalley.StardewValley;
 import net.daniel.stardewvalley.block.ModBlocks;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,9 +17,18 @@ public class ModCrops {
 
 
     public static final RegistryObject<Item> CAULIFLOWER_SEEDS = ITEMS.register("cauliflower_seeds",
-            () -> new ItemNameBlockItem(ModBlocks.CAULIFLOWER_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.CROPS_TAB)));
+            () -> new BlockItem(ModBlocks.CAULIFLOWER_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.CROPS_TAB)));
 
     public static final RegistryObject<Item> CAULIFLOWER = ITEMS.register("cauliflower",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())
+                    .tab(ModCreativeModeTab.CROPS_TAB)));
+
+
+    public static final RegistryObject<Item> PARSNIP_SEEDS = ITEMS.register("parsnip_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.PARSNIP_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.CROPS_TAB)));
+
+    public static final RegistryObject<Item> PARSNIP = ITEMS.register("parsnip",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())
                     .tab(ModCreativeModeTab.CROPS_TAB)));

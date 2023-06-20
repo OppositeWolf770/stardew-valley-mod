@@ -12,6 +12,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -38,8 +39,15 @@ public class ModBlocks {
     // Crops
     public static final RegistryObject<Block> CAULIFLOWER_CROP = BLOCKS.register("cauliflower_crop",
             () -> new ModCropBlock(
+                    BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP),
+                    ModCrops.CAULIFLOWER_SEEDS
+            )
+    );
+
+    public static final RegistryObject<Block> PARSNIP_CROP = BLOCKS.register("parsnip_crop",
+            () -> new ModCropBlock(
                     BlockBehaviour.Properties.copy(Blocks.WHEAT),
-                    ModCrops.CAULIFLOWER_SEEDS.get()
+                    ModCrops.PARSNIP_SEEDS
             )
     );
 

@@ -1,5 +1,6 @@
 package net.daniel.stardewvalley.block.custom.crops;
 
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
@@ -7,11 +8,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
+import java.util.function.Supplier;
+
 public class ModCropBlock extends CropBlock {
-    ItemLike seed;
+    Supplier<Item> seed;
     public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 6);
 
-    public ModCropBlock(Properties pProperties, ItemLike seed) {
+    public ModCropBlock(Properties pProperties, Supplier<Item> seed) {
         super(pProperties);
         this.seed = seed;
 
@@ -19,7 +22,7 @@ public class ModCropBlock extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return seed;
+        return seed.get();
     }
 
     @Override

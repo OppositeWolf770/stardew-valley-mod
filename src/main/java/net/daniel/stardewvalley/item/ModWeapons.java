@@ -2,7 +2,6 @@ package net.daniel.stardewvalley.item;
 
 import net.daniel.stardewvalley.StardewValley;
 import net.daniel.stardewvalley.item.custom.WeaponItem;
-import net.daniel.stardewvalley.item.custom.weapons.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
