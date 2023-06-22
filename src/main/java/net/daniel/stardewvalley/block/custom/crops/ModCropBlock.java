@@ -17,10 +17,8 @@ public class ModCropBlock extends CropBlock {
     public ModCropBlock(Properties pProperties, Supplier<Item> seed) {
         super(pProperties);
         this.seed = seed;
-
     }
 
-    @Override
     protected ItemLike getBaseSeedId() {
         return seed.get();
     }

@@ -29,6 +29,8 @@ public class StardewValley {
         // Sets up the item and block registries
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModWeapons.register(modEventBus);
         ModMinerals.register(modEventBus);

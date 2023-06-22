@@ -16,18 +16,18 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "stardewvalley:cauliflower_crop",
+                  "block": "stardewvalley:parsnip_crop",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "6"
                   }
                 }
               ],
-              "name": "stardewvalley:cauliflower"
+              "name": "stardewvalley:parsnip"
             },
             {
               "type": "minecraft:item",
-              "name": "stardewvalley:cauliflower_seeds"
+              "name": "stardewvalley:parsnip_seeds"
             }
           ]
         }
@@ -38,7 +38,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "stardewvalley:cauliflower_crop",
+          "block": "stardewvalley:parsnip_crop",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "6"
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "stardewvalley:cauliflower_seeds"
+          "name": "stardewvalley:parsnip_seeds"
         }
       ],
       "rolls": 1.0

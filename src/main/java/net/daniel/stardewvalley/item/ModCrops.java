@@ -17,21 +17,21 @@ public class ModCrops {
 
 
     public static final RegistryObject<Item> CAULIFLOWER_SEEDS = ITEMS.register("cauliflower_seeds",
-            () -> new BlockItem(ModBlocks.CAULIFLOWER_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.CROPS_TAB)));
+            () -> new BlockItem(ModBlocks.CAULIFLOWER_CROP.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> CAULIFLOWER = ITEMS.register("cauliflower",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())
-                    .tab(ModCreativeModeTab.CROPS_TAB)));
+                    ));
 
 
     public static final RegistryObject<Item> PARSNIP_SEEDS = ITEMS.register("parsnip_seeds",
-            () -> new ItemNameBlockItem(ModBlocks.PARSNIP_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.CROPS_TAB)));
+            () -> new ItemNameBlockItem(ModBlocks.PARSNIP_CROP.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> PARSNIP = ITEMS.register("parsnip",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())
-                    .tab(ModCreativeModeTab.CROPS_TAB)));
+                    ));
 
 
 

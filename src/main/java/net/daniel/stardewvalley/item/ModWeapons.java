@@ -50,7 +50,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "The blade was forged from a magical tooth."
             ));
 
@@ -82,7 +82,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "The true form of the Galaxy Dagger."
             ));
 
@@ -114,7 +114,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "This club was crafted from a magical tooth."
             ));
 
@@ -146,7 +146,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "The blade was forged from a magical tooth."
             ));
 
@@ -178,7 +178,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "A large, sharp blade formed from bone."
             ));
 
@@ -210,7 +210,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "The point is unbelievably sharp, even down to the atomic level."
             ));
 
@@ -242,7 +242,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "The true form of the Galaxy Sword."
             ));
 
@@ -274,7 +274,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "The true form of the Galaxy Hammer."
             ));
 
@@ -306,7 +306,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It emits a very faint whirring sound."
             ));
 
@@ -338,7 +338,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It's ancient, but the blade never dulls."
             ));
 
@@ -372,7 +372,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It's more powerful than a normal scythe."
             ));
 
@@ -404,7 +404,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It looks like it could withstand anything."
             ));
 
@@ -436,7 +436,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It came from the sea, but it's still sharp."
             ));
 
@@ -468,7 +468,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "Light and powerful."
             ));
 
@@ -500,7 +500,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "An elegant blade."
             ));
 
@@ -532,7 +532,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It's icy cold to the touch."
             ));
 
@@ -564,7 +564,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It's made from fine marblewood."
             ));
 
@@ -597,7 +597,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "Requires stones for ammo."
             ));
 
@@ -629,7 +629,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "Requires stones for ammo."
             ));
 
@@ -661,7 +661,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It looks really powerful."
             ));
 
@@ -693,7 +693,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "Elliott used this to write his book. It's sharp!"
             ));
 
@@ -725,7 +725,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "A big, metal wrench. It smells like Maru."
             ));
 
@@ -757,7 +757,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It brings back memories of Harvey's clinic."
             ));
 
@@ -789,7 +789,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "Penny's favorite frying pan. There's some rubbery gunk stuck to the inside."
             ));
 
@@ -821,7 +821,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "Leah's favorite tool for shaping driftwood."
             ));
 
@@ -853,7 +853,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "An old, heavy bone caked in centuries of grime."
             ));
 
@@ -885,7 +885,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It's unlike anything you've seen."
             ));
 
@@ -917,7 +917,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "A swift little blade."
             ));
 
@@ -949,7 +949,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "The blade is made of purified quartz."
             ));
 
@@ -981,7 +981,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "Only the nimble hands of an elf could craft this."
             ));
 
@@ -1013,7 +1013,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "When you hold the blade to your ear you can hear 1,000 souls shrieking."
             ));
 
@@ -1045,7 +1045,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "A weapon of choice for the swift and silent."
             ));
 
@@ -1077,7 +1077,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "A common dagger."
             ));
 
@@ -1109,7 +1109,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "A small, light blade."
             ));
 
@@ -1141,7 +1141,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "Made powerful by forest magic."
             ));
 
@@ -1173,7 +1173,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "An heirloom from beyond the Gem Sea."
             ));
 
@@ -1205,7 +1205,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "Not very pleasant to wield."
             ));
 
@@ -1238,7 +1238,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "Not bad for a piece of carved wood."
             ));
 
@@ -1270,7 +1270,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "A standard metal blade."
             ));
 
@@ -1302,7 +1302,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It's really heavy."
             ));
 
@@ -1334,7 +1334,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "A powerful blade forged in a pool of churning lava."
             ));
 
@@ -1366,7 +1366,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It's incredibly sharp."
             ));
 
@@ -1398,7 +1398,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It once belonged to an honorable knight."
             ));
 
@@ -1430,7 +1430,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "A heavy broadsword."
             ));
 
@@ -1462,7 +1462,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "A very light piece of sharpened bone."
             ));
 
@@ -1494,7 +1494,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It's unlike anything you've ever seen."
             ));
 
@@ -1526,7 +1526,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It feels hopeful to wield."
             ));
 
@@ -1558,7 +1558,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "It's glowing with vampire energy."
             ));
 
@@ -1590,7 +1590,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "Plated with silver to deter rust."
             ));
 
@@ -1622,7 +1622,7 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTab.WEAPONS_TAB),
+                    ,
                     "A rusty, dull old sword."
             ));
 
