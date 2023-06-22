@@ -2,10 +2,7 @@ package net.daniel.stardewvalley;
 
 import com.mojang.logging.LogUtils;
 import net.daniel.stardewvalley.block.ModBlocks;
-import net.daniel.stardewvalley.item.ModArtifacts;
-import net.daniel.stardewvalley.item.ModItems;
-import net.daniel.stardewvalley.item.ModMinerals;
-import net.daniel.stardewvalley.item.ModWeapons;
+import net.daniel.stardewvalley.item.*;
 import net.minecraft.ChatFormatting;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,18 +19,25 @@ public class StardewValley {
     public static final String MODID = "stardewvalley";
     private static final Logger LOGGER = LogUtils.getLogger();
 
+
+    // Describes the color values and description messages for tooltips
     public static ChatFormatting tooltipColor = ChatFormatting.AQUA;
     public static ChatFormatting shiftTooltipColor = ChatFormatting.GOLD;
     public static String shiftMessage = "Press SHIFT to view description";
 
     public StardewValley() {
+        // Sets up the item and block registries
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModWeapons.register(modEventBus);
         ModMinerals.register(modEventBus);
         ModArtifacts.register(modEventBus);
+        ModCrops.register(modEventBus);
         ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 

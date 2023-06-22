@@ -150,13 +150,24 @@
   "item.stardewvalley.silver_saber": "Silver Saber",
   "item.stardewvalley.rusty_sword": "Rusty Sword",
 
+  "item.stardewvalley.cauliflower": "Cauliflower",
+  "item.stardewvalley.parsnip": "Parsnip",
+
+  "item.stardewvalley.cauliflower_seeds": "Cauliflower Seeds",
+  "item.stardewvalley.parsnip_seeds": "Parsnip Seeds",
+
   "block.stardewvalley.crystalarium": "Crystalarium",
   "block.stardewvalley.scarecrow": "Scarecrow",
+
+  "block.stardewvalley.cauliflower_crop": "Cauliflower",
+  "block.stardewvalley.parsnip_crop": "Parsnip",
+
 
   "container.stardewvalley.crystalarium": "Crystalarium",
 
   "itemGroup.stardewtab": "Stardew Valley",
   "itemGroup.artifactstab": "Artifacts",
   "itemGroup.mineralstab": "Minerals",
-  "itemGroup.weaponstab": "Weapons"
+  "itemGroup.weaponstab": "Weapons",
+  "itemGroup.cropstab": "Crops"
 }
