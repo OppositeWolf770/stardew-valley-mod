@@ -1,7 +1,5 @@
 package net.daniel.stardewvalley.item.custom.tools;
 
-import net.daniel.stardewvalley.gui.GuiWrapper;
-import net.daniel.stardewvalley.util.ItemUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -21,11 +19,11 @@ public class TrashCanItem extends Item {
         super(pProperties);
     }
 
-    @Override
-    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        final ItemStack stack = ItemUtils.getHeldItem(pPlayer, this);
-        return null;
-    }
+//    @Override
+//    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
+//        final ItemStack stack = ItemUtils.getHeldItem(pPlayer, this);
+//        return null;
+//    }
 
 
 }

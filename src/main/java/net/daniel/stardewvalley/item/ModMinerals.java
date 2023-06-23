@@ -232,5 +232,9 @@ public class ModMinerals {
             () -> new MineralItem(new Item.Properties(),
                     "A precious stone with a brilliant green color."));
 
+    public static final RegistryObject<Item> IRIDIUM_BAR = ITEMS.register("iridium_bar",
+            () -> new MineralItem(new Item.Properties(),
+                    "A bar of pure iridium."));
+
     public static void  register(IEventBus eventBus) { ITEMS.register(eventBus); }
 }
