@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModArtifacts.ARTIFACT_ANCIENT_DOLL.get());
                         output.accept(ModArtifacts.ARTIFACT_ANCIENT_DRUM.get());
                         output.accept(ModArtifacts.ARTIFACT_ANCIENT_SEED.get());
+                        output.accept(ModArtifacts.ARTIFACT_ANCIENT_SWORD.get());
                         output.accept(ModArtifacts.ARTIFACT_ANCHOR.get());
                         output.accept(ModArtifacts.ARTIFACT_ARROWHEAD.get());
                         output.accept(ModArtifacts.ARTIFACT_AMPHIBIAN_FOSSIL.get());
@@ -44,6 +45,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModArtifacts.ARTIFACT_GOLDEN_MASK.get());
                         output.accept(ModArtifacts.ARTIFACT_GOLDEN_RELIC.get());
                         output.accept(ModArtifacts.ARTIFACT_NAUTILUS_FOSSIL.get());
+                        output.accept(ModArtifacts.ARTIFACT_ORNAMENTAL_FAN.get());
                         output.accept(ModArtifacts.ARTIFACT_PALM_FOSSIL.get());
                         output.accept(ModArtifacts.ARTIFACT_PREHISTORIC_HANDAXE.get());
                         output.accept(ModArtifacts.ARTIFACT_PREHISTORIC_RIB.get());
@@ -80,6 +82,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("itemGroup.mineralstab"))
                     .displayItems((displayParams, output) -> {
                         output.accept(ModMinerals.AERINITE.get());
+                        output.accept(ModMinerals.ALAMITE.get());
                         output.accept(ModMinerals.AMETHYST.get());
                         output.accept(ModMinerals.AQUAMARINE.get());
                         output.accept(ModMinerals.BARYTE.get());
@@ -89,6 +92,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModMinerals.CELESTINE.get());
                         output.accept(ModMinerals.DIAMOND.get());
                         output.accept(ModMinerals.DOLOMITE.get());
+                        output.accept(ModMinerals.EARTH_CRYSTAL.get());
                         output.accept(ModMinerals.EMERALD.get());
                         output.accept(ModMinerals.ESPERITE.get());
                         output.accept(ModMinerals.FAIRY_STONE.get());
@@ -165,6 +169,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModWeapons.INFINITY_BLADE.get());
                         output.accept(ModWeapons.INFINITY_DAGGER.get());
                         output.accept(ModWeapons.INFINITY_GAVEL.get());
+                        output.accept(ModWeapons.INSECT_HEAD.get());
                         output.accept(ModWeapons.IRON_DIRK.get());
                         output.accept(ModWeapons.IRON_EDGE.get());
                         output.accept(ModWeapons.IRIDIUM_NEEDLE.get());
@@ -207,6 +212,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModTools.FIBERGLASS_ROD.get());
                         output.accept(ModTools.IRIDIUM_ROD.get());
                         output.accept(ModTools.TRAINING_ROD.get());
+                        output.accept(ModTools.HOE.get());
                         output.accept(ModTools.COPPER_HOE.get());
                         output.accept(ModTools.GOLD_HOE.get());
                         output.accept(ModTools.IRIDIUM_HOE.get());
@@ -244,7 +250,7 @@ public class ModCreativeModeTabs {
 
 
 
-    //    public static final CreativeModeTab STARDEW_TAB = new CreativeModeTab("stardewtab") {
+//        public static final CreativeModeTab STARDEW_TAB = new CreativeModeTab("stardewtab") {
 //        @Override
 //        public ItemStack makeIcon() {
 //            return new ItemStack(ModArtifacts.ARTIFACT_CHICKEN_STATUE.get());
@@ -297,8 +303,8 @@ public class ModCreativeModeTabs {
 //        public void fillItemList(NonNullList<ItemStack> items) {
 //            super.fillItemList(items);
 //            items.sort(Comparator.comparing(e -> e.getDisplayName().getString()));
-//        }
-//    };
+//         }
+//   };
 
 
 
