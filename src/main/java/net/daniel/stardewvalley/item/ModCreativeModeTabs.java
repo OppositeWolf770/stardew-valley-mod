@@ -199,41 +199,42 @@ public class ModCreativeModeTabs {
 
     public static RegistryObject<CreativeModeTab> TOOLS_TAB = CREATIVE_MODE_TABS.register("toolstab", () ->
             CreativeModeTab.builder()
-                    .icon(() -> new ItemStack((ModTools.COPPER_AXE.get())))
+                    .icon(() -> new ItemStack(ModTools.COPPER_AXE.get()))
                     .title(Component.translatable("itemGroup.toolstab"))
                     .displayItems((displayParams, output) -> {
                         output.accept(ModTools.AXE.get());
                         output.accept(ModTools.COPPER_AXE.get());
+                        output.accept(ModTools.STEEL_AXE.get());
                         output.accept(ModTools.GOLD_AXE.get());
                         output.accept(ModTools.IRIDIUM_AXE.get());
-                        output.accept(ModTools.STEEL_AXE.get());
                         output.accept(ModTools.COPPER_PAN.get());
+                        output.accept(ModTools.TRAINING_ROD.get());
                         output.accept(ModTools.BAMBOO_POLE.get());
                         output.accept(ModTools.FIBERGLASS_ROD.get());
                         output.accept(ModTools.IRIDIUM_ROD.get());
-                        output.accept(ModTools.TRAINING_ROD.get());
                         output.accept(ModTools.HOE.get());
                         output.accept(ModTools.COPPER_HOE.get());
+                        output.accept(ModTools.STEEL_HOE.get());
                         output.accept(ModTools.GOLD_HOE.get());
                         output.accept(ModTools.IRIDIUM_HOE.get());
-                        output.accept(ModTools.STEEL_HOE.get());
                         output.accept(ModTools.MILK_PAIL.get());
+                        output.accept(ModTools.PICKAXE.get());
                         output.accept(ModTools.COPPER_PICKAXE.get());
+                        output.accept(ModTools.STEEL_PICKAXE.get());
                         output.accept(ModTools.GOLD_PICKAXE.get());
                         output.accept(ModTools.IRIDIUM_PICKAXE.get());
-                        output.accept(ModTools.PICKAXE.get());
-                        output.accept(ModTools.STEEL_PICKAXE.get());
                         output.accept(ModTools.SCYTHE.get());
                         output.accept(ModTools.SHEARS.get());
                         output.accept(ModTools.COPPER_TRASH_CAN.get());
+                        output.accept(ModTools.STEEL_TRASH_CAN.get());
                         output.accept(ModTools.GOLD_TRASH_CAN.get());
                         output.accept(ModTools.IRIDIUM_TRASH_CAN.get());
-                        output.accept(ModTools.STEEL_TRASH_CAN.get());
+                        output.accept(ModTools.WATERING_CAN.get());
                         output.accept(ModTools.COPPER_WATERING_CAN.get());
+                        output.accept(ModTools.STEEL_WATERING_CAN.get());
                         output.accept(ModTools.GOLD_WATERING_CAN.get());
                         output.accept(ModTools.IRIDIUM_WATERING_CAN.get());
-                        output.accept(ModTools.STEEL_WATERING_CAN.get());
-                        output.accept(ModTools.WATERING_CAN.get());
+
                     })
                     .build());
     public static RegistryObject<CreativeModeTab> CROPS_TAB = CREATIVE_MODE_TABS.register("cropstab", () ->

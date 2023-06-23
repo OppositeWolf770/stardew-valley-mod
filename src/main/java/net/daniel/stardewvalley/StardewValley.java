@@ -37,6 +37,7 @@ public class StardewValley {
         ModArtifacts.register(modEventBus);
         ModCrops.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModTools.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);
