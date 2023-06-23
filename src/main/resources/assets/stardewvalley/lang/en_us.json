@@ -183,8 +183,18 @@
   "item.stardewvalley.gold_trash_can": "Gold Trash Can",
   "item.stardewvalley.iridium_trash_can": "Iridium Trash Can",
 
+  "item.stardewvalley.cauliflower": "Cauliflower",
+  "item.stardewvalley.parsnip": "Parsnip",
+
+  "item.stardewvalley.cauliflower_seeds": "Cauliflower Seeds",
+  "item.stardewvalley.parsnip_seeds": "Parsnip Seeds",
+
   "block.stardewvalley.crystalarium": "Crystalarium",
   "block.stardewvalley.scarecrow": "Scarecrow",
+
+  "block.stardewvalley.cauliflower_crop": "Cauliflower",
+  "block.stardewvalley.parsnip_crop": "Parsnip",
+
 
   "container.stardewvalley.crystalarium": "Crystalarium",
 
@@ -192,5 +202,6 @@
   "itemGroup.artifactstab": "Artifacts",
   "itemGroup.mineralstab": "Minerals",
   "itemGroup.weaponstab": "Weapons",
-  "itemGroup.toolstab": "Tools"
+  "itemGroup.toolstab": "Tools",
+  "itemGroup.cropstab": "Crops"
 }

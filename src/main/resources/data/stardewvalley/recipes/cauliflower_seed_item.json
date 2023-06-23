@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "stardewvalley:cauliflower"
+    }
+  ],
+  "result": {
+    "item": "stardewvalley:cauliflower_seeds"
+  }
+}

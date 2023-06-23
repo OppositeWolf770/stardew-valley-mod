@@ -20,20 +20,24 @@ public class StardewValley {
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
-    // Color configs and shift message for tooltips
+    // Describes the color values and description messages for tooltips
     public static ChatFormatting tooltipColor = ChatFormatting.AQUA;
     public static ChatFormatting shiftTooltipColor = ChatFormatting.GOLD;
     public static String shiftMessage = "Press SHIFT to view description";
 
     public StardewValley() {
+        // Sets up the item and block registries
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModWeapons.register(modEventBus);
         ModMinerals.register(modEventBus);
         ModArtifacts.register(modEventBus);
-        ModTools.register(modEventBus);
+        ModCrops.register(modEventBus);
         ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 
