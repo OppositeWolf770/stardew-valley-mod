@@ -193,6 +193,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModWeapons.RUSTY_SWORD.get());
                     })
                     .build());
+
+    public static RegistryObject<CreativeModeTab> TOOLS_TAB = CREATIVE_MODE_TABS.register("toolstab", () ->
+            CreativeModeTab.builder()
+                    .icon(() -> new ItemStack((ModTools.COPPER_AXE.get())))
+                    .title(Component.translatable("itemGroup.toolstab"))
+                    .displayItems((displayParams, output) -> {
+
+                    })
+                    .build());
     public static RegistryObject<CreativeModeTab> CROPS_TAB = CREATIVE_MODE_TABS.register("cropstab", () ->
             CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModCrops.CAULIFLOWER.get()))
