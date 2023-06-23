@@ -236,5 +236,6 @@ public class ModMinerals {
             () -> new MineralItem(new Item.Properties(),
                     "A bar of pure iridium."));
 
+
     public static void  register(IEventBus eventBus) { ITEMS.register(eventBus); }
 }
