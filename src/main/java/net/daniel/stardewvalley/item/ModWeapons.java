@@ -1,7 +1,7 @@
 package net.daniel.stardewvalley.item;
 
 import net.daniel.stardewvalley.StardewValley;
-import net.daniel.stardewvalley.item.custom.weapons.*;
+import net.daniel.stardewvalley.item.custom.WeaponItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -23,7 +23,7 @@ public class ModWeapons {
      */
 
     public static final RegistryObject<Item> DRAGONTOOTH_CUTLASS = ITEMS.register("dragontooth_cutlass",
-            () -> new DragontoothCutlassItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -50,11 +50,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "The blade was forged from a magical tooth."
             ));
 
     public static final RegistryObject<Item> INFINITY_DAGGER = ITEMS.register("infinity_dagger",
-            () -> new InfinityDaggerItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -81,11 +82,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "The true form of the Galaxy Dagger."
             ));
 
     public static final RegistryObject<Item> DRAGONTOOTH_CLUB = ITEMS.register("dragontooth_club",
-            () -> new DragontoothClubItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -112,11 +114,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "This club was crafted from a magical tooth."
             ));
 
     public static final RegistryObject<Item> DRAGONTOOTH_SHIV = ITEMS.register("dragontooth_shiv",
-            () -> new DragontoothShivItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -143,11 +146,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "The blade was forged from a magical tooth."
             ));
 
     public static final RegistryObject<Item> OSSIFIED_BLADE = ITEMS.register("ossified_blade",
-            () -> new OssifiedBladeItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -174,11 +178,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "A large, sharp blade formed from bone."
             ));
 
     public static final RegistryObject<Item> IRIDIUM_NEEDLE = ITEMS.register("iridium_needle",
-            () -> new IridiumNeedleItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -205,11 +210,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "The point is unbelievably sharp, even down to the atomic level."
             ));
 
     public static final RegistryObject<Item> INFINITY_BLADE = ITEMS.register("infinity_blade",
-            () -> new InfinityBladeItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -236,11 +242,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "The true form of the Galaxy Sword."
             ));
 
     public static final RegistryObject<Item> INFINITY_GAVEL = ITEMS.register("infinity_gavel",
-            () -> new InfinityGavelItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -267,11 +274,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "The true form of the Galaxy Hammer."
             ));
 
     public static final RegistryObject<Item> DWARF_HAMMER = ITEMS.register("dwarf_hammer",
-            () -> new DwarfHammerItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -298,11 +306,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It emits a very faint whirring sound."
             ));
 
     public static final RegistryObject<Item> DWARF_SWORD = ITEMS.register("dwarf_sword",
-            () -> new DwarfSwordItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -329,11 +338,14 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It's ancient, but the blade never dulls."
             ));
 
+
+    // TODO Redefine Golden Scythe as a tool??
     public static final RegistryObject<Item> GOLDEN_SCYTHE = ITEMS.register("golden_scythe",
-            () -> new GoldenScytheItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -360,11 +372,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It's more powerful than a normal scythe."
             ));
 
     public static final RegistryObject<Item> TEMPERED_BROADSWORD = ITEMS.register("tempered_broadsword",
-            () -> new TemperedBroadswordItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -391,11 +404,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It looks like it could withstand anything."
             ));
 
     public static final RegistryObject<Item> BROKEN_TRIDENT = ITEMS.register("broken_trident",
-            () -> new BrokenTridentItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -422,11 +436,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It came from the sea, but it's still sharp."
             ));
 
     public static final RegistryObject<Item> STEEL_FALCHION = ITEMS.register("steel_falchion",
-            () -> new SteelFalchionItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -453,11 +468,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "Light and powerful."
             ));
 
     public static final RegistryObject<Item> RAPIER = ITEMS.register("rapier",
-            () -> new RapierItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -484,11 +500,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "An elegant blade."
             ));
 
     public static final RegistryObject<Item> YETI_TOOTH = ITEMS.register("yeti_tooth",
-            () -> new YetiToothItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -515,11 +532,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It's icy cold to the touch."
             ));
 
     public static final RegistryObject<Item> ABBYS_PLANCHETTE = ITEMS.register("abbys_planchette",
-            () -> new AbbysPlanchetteItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -546,11 +564,13 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It's made from fine marblewood."
             ));
 
+    //TODO Maybe make slingshots their own item type?
     public static final RegistryObject<Item> SLINGSHOT = ITEMS.register("slingshot",
-            () -> new SlingshotItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -577,11 +597,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "Requires stones for ammo."
             ));
 
     public static final RegistryObject<Item> MASTER_SLINGSHOT = ITEMS.register("master_slingshot",
-            () -> new MasterSlingshotItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -608,11 +629,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "Requires stones for ammo."
             ));
 
     public static final RegistryObject<Item> GALAXY_SLINGSHOT = ITEMS.register("galaxy_slingshot",
-            () -> new GalaxySlingshotItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -639,11 +661,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It looks really powerful."
             ));
 
     public static final RegistryObject<Item> ELLIOTS_PENCIL = ITEMS.register("elliots_pencil",
-            () -> new ElliotsPencilItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -670,11 +693,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "Elliott used this to write his book. It's sharp!"
             ));
 
     public static final RegistryObject<Item> MARUS_WRENCH = ITEMS.register("marus_wrench",
-            () -> new MarusWrenchItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -701,11 +725,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "A big, metal wrench. It smells like Maru."
             ));
 
     public static final RegistryObject<Item> HARVEYS_MALLET = ITEMS.register("harveys_mallet",
-            () -> new HarveysMalletItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -732,11 +757,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It brings back memories of Harvey's clinic."
             ));
 
     public static final RegistryObject<Item> PENNYS_FRYER = ITEMS.register("pennys_fryer",
-            () -> new PennysFryerItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -763,11 +789,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "Penny's favorite frying pan. There's some rubbery gunk stuck to the inside."
             ));
 
     public static final RegistryObject<Item> LEAHS_WHITTLER = ITEMS.register("leahs_whittler",
-            () -> new LeahsWhittlerItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -794,11 +821,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "Leah's favorite tool for shaping driftwood."
             ));
 
     public static final RegistryObject<Item> FEMUR = ITEMS.register("femur",
-            () -> new FemurItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -825,11 +853,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "An old, heavy bone caked in centuries of grime."
             ));
 
     public static final RegistryObject<Item> GALAXY_DAGGER = ITEMS.register("galaxy_dagger",
-            () -> new GalaxyDaggerItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -856,11 +885,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It's unlike anything you've seen."
             ));
 
     public static final RegistryObject<Item> WIND_SPIRE = ITEMS.register("wind_spire",
-            () -> new WindSpireItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -887,11 +917,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "A swift little blade."
             ));
 
     public static final RegistryObject<Item> CRYSTAL_DAGGER = ITEMS.register("crystal_dagger",
-            () -> new CrystalDaggerItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -918,11 +949,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "The blade is made of purified quartz."
             ));
 
     public static final RegistryObject<Item> ELF_BLADE = ITEMS.register("elf_blade",
-            () -> new ElfBladeItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -949,11 +981,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "Only the nimble hands of an elf could craft this."
             ));
 
     public static final RegistryObject<Item> SHADOW_DAGGER = ITEMS.register("shadow_dagger",
-            () -> new ShadowDaggerItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -980,11 +1013,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "When you hold the blade to your ear you can hear 1,000 souls shrieking."
             ));
 
     public static final RegistryObject<Item> BURGLARS_SHANK = ITEMS.register("burglars_shank",
-            () -> new BurglarsShankItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1011,11 +1045,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "A weapon of choice for the swift and silent."
             ));
 
     public static final RegistryObject<Item> IRON_DIRK = ITEMS.register("iron_dirk",
-            () -> new IronDirkItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1042,11 +1077,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "A common dagger."
             ));
 
     public static final RegistryObject<Item> CARVING_KNIFE = ITEMS.register("carving_knife",
-            () -> new CarvingKnifeItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1073,11 +1109,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "A small, light blade."
             ));
 
     public static final RegistryObject<Item> FOREST_SWORD = ITEMS.register("forest_sword",
-            () -> new ForestSwordItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1104,11 +1141,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "Made powerful by forest magic."
             ));
 
     public static final RegistryObject<Item> NEPTUNES_GLAIVE = ITEMS.register("neptunes_glaive",
-            () -> new NeptunesGlaiveItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1135,11 +1173,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "An heirloom from beyond the Gem Sea."
             ));
 
     public static final RegistryObject<Item> INSECT_HEAD = ITEMS.register("insect_head",
-            () -> new InsectHeadItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1166,12 +1205,13 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "Not very pleasant to wield."
             ));
 
 
     public static final RegistryObject<Item> WOODEN_BLADE = ITEMS.register("wooden_blade",
-            () -> new WoodenBladeItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1198,11 +1238,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "Not bad for a piece of carved wood."
             ));
 
     public static final RegistryObject<Item> STEEL_SMALLSWORD = ITEMS.register("steel_smallsword",
-            () -> new SteelSmallswordItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1229,11 +1270,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "A standard metal blade."
             ));
 
     public static final RegistryObject<Item> CLAYMORE = ITEMS.register("claymore",
-            () -> new ClaymoreItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1260,11 +1302,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It's really heavy."
             ));
 
     public static final RegistryObject<Item> LAVA_KATANA = ITEMS.register("lava_katana",
-            () -> new LavaKatanaItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1291,11 +1334,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "A powerful blade forged in a pool of churning lava."
             ));
 
     public static final RegistryObject<Item> OBSIDIAN_EDGE = ITEMS.register("obsidian_edge",
-            () -> new ObsidianEdgeItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1322,11 +1366,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It's incredibly sharp."
             ));
 
     public static final RegistryObject<Item> TEMPLARS_BLADE = ITEMS.register("templars_blade",
-            () -> new TemplarsBladeItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1353,11 +1398,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It once belonged to an honorable knight."
             ));
 
     public static final RegistryObject<Item> IRON_EDGE = ITEMS.register("iron_edge",
-            () -> new IronEdgeItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1384,11 +1430,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "A heavy broadsword."
             ));
 
     public static final RegistryObject<Item> BONE_SWORD = ITEMS.register("bone_sword",
-            () -> new BoneSwordItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1415,11 +1462,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "A very light piece of sharpened bone."
             ));
 
     public static final RegistryObject<Item> GALAXY_SWORD = ITEMS.register("galaxy_sword",
-            () -> new GalaxySwordItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1446,11 +1494,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It's unlike anything you've ever seen."
             ));
 
     public static final RegistryObject<Item> HOLY_BLADE = ITEMS.register("holy_blade",
-            () -> new HolyBladeItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1477,11 +1526,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It feels hopeful to wield."
             ));
 
     public static final RegistryObject<Item> DARK_SWORD = ITEMS.register("dark_sword",
-            () -> new DarkSwordItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1508,11 +1558,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "It's glowing with vampire energy."
             ));
 
     public static final RegistryObject<Item> SILVER_SABER = ITEMS.register("silver_saber",
-            () -> new SilverSaberItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1539,11 +1590,12 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "Plated with silver to deter rust."
             ));
 
     public static final RegistryObject<Item> RUSTY_SWORD = ITEMS.register("rusty_sword",
-            () -> new RustySwordItem(new Tier() {
+            () -> new WeaponItem(new Tier() {
                 @Override
                 public int getUses() {
                     return 2000;
@@ -1570,7 +1622,8 @@ public class ModWeapons {
                     return Ingredient.of(ModMinerals.PRISMATIC_SHARD.get());
                 }
             }, 11, -2.2F, new Item.Properties()
-                    .tab(ModCreativeModeTabs.WEAPONS_TAB)
+                    ,
+                    "A rusty, dull old sword."
             ));
 
     public static void  register(IEventBus eventBus) { ITEMS.register(eventBus); }

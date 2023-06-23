@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "stardewvalley:block/cauliflower_stage_0"
+  },
+  "render_type": "cutout"
+}
