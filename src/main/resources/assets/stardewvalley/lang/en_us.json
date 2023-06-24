@@ -183,17 +183,26 @@
   "item.stardewvalley.gold_trash_can": "Gold Trash Can",
   "item.stardewvalley.iridium_trash_can": "Iridium Trash Can",
 
-  "item.stardewvalley.cauliflower": "Cauliflower",
-  "item.stardewvalley.parsnip": "Parsnip",
-
-  "item.stardewvalley.cauliflower_seeds": "Cauliflower Seeds",
-  "item.stardewvalley.parsnip_seeds": "Parsnip Seeds",
 
   "block.stardewvalley.crystalarium": "Crystalarium",
   "block.stardewvalley.scarecrow": "Scarecrow",
 
+
+  "item.stardewvalley.cauliflower": "Cauliflower",
+  "item.stardewvalley.parsnip": "Parsnip",
+  "item.stardewvalley.garlic": "Garlic",
+  "item.stardewvalley.blue_jazz": "Blue Jazz",
+
+  "item.stardewvalley.cauliflower_seeds": "Cauliflower Seeds",
+  "item.stardewvalley.parsnip_seeds": "Parsnip Seeds",
+  "item.stardewvalley.garlic_seeds": "Garlic Seeds",
+  "item.stardewvalley.blue_jazz_seeds": "Jazz Seeds",
+
   "block.stardewvalley.cauliflower_crop": "Cauliflower",
   "block.stardewvalley.parsnip_crop": "Parsnip",
+  "block.stardewvalley.garlic_crop": "Garlic",
+  "block.stardewvalley.blue_jazz_crop": "Blue Jazz",
+
 
 
   "container.stardewvalley.crystalarium": "Crystalarium",

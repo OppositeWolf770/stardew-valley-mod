@@ -47,6 +47,19 @@ public class ModBlocks {
             )
     );
 
+    public static final RegistryObject<Block> GARLIC_CROP = BLOCKS.register("garlic_crop",
+            () -> new ModCropBlock(
+                    BlockBehaviour.Properties.copy(Blocks.WHEAT),
+                    ModCrops.GARLIC_SEEDS
+            )
+    );
+
+    public static final RegistryObject<Block> BLUE_JAZZ_CROP = BLOCKS.register("blue_jazz_crop",
+            () -> new ModCropBlock(
+                    BlockBehaviour.Properties.copy(Blocks.WHEAT),
+                    ModCrops.JAZZ_SEEDS
+            )
+    );
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
@@ -54,16 +67,8 @@ public class ModBlocks {
         registerBlockItem(name, toReturn);
         return toReturn;
     }
-
-//    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab) {
-//        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
-//    }
-
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
-
-
-
     public static void  register(IEventBus eventBus) { BLOCKS.register(eventBus); }
 }

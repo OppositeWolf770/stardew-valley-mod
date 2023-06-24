@@ -5,13 +5,17 @@ import net.daniel.stardewvalley.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 
-
+@Mod.EventBusSubscriber(modid = StardewValley.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB,
             StardewValley.MODID);
@@ -246,68 +250,19 @@ public class ModCreativeModeTabs {
                         output.accept(ModCrops.CAULIFLOWER_SEEDS.get());
                         output.accept(ModCrops.PARSNIP.get());
                         output.accept(ModCrops.PARSNIP_SEEDS.get());
+                        output.accept(ModCrops.GARLIC.get());
+                        output.accept(ModCrops.GARLIC_SEEDS.get());
+                        output.accept(ModCrops.BLUE_JAZZ.get());
+                        output.accept(ModCrops.JAZZ_SEEDS.get());
                     })
                     .build());
 
-
-
-//        public static final CreativeModeTab STARDEW_TAB = new CreativeModeTab("stardewtab") {
-//        @Override
-//        public ItemStack makeIcon() {
-//            return new ItemStack(ModArtifacts.ARTIFACT_CHICKEN_STATUE.get());
-//        }
-//        @Override
-//        public void fillItemList(NonNullList<ItemStack> items) {
-//            super.fillItemList(items);
-//            items.sort(Comparator.comparing(e -> e.getDisplayName().getString()));
-//        }
-//    };
-//    public static final CreativeModeTab ARTIFACTS_TAB = new CreativeModeTab("artifactstab") {
-//        @Override
-//        public ItemStack makeIcon() {
-//            return new ItemStack(ModArtifacts.ARTIFACT_LOST_BOOK.get());
-//        }
-//        @Override
-//        public void fillItemList(NonNullList<ItemStack> items) {
-//            super.fillItemList(items);
-//            items.sort(Comparator.comparing(e -> e.getDisplayName().getString()));
-//        }
-//    };
-//    public static final CreativeModeTab MINERALS_TAB = new CreativeModeTab("mineralstab") {
-//        @Override
-//        public ItemStack makeIcon() {
-//            return new ItemStack(ModMinerals.QUARTZ.get());
-//        }
-//        @Override
-//        public void fillItemList(NonNullList<ItemStack> items) {
-//            super.fillItemList(items);
-//            items.sort(Comparator.comparing(e -> e.getDisplayName().getString()));
-//        }
-//    };
-//    public static final CreativeModeTab WEAPONS_TAB = new CreativeModeTab("weaponstab") {
-//        @Override
-//        public ItemStack makeIcon() {
-//            return new ItemStack(ModWeapons.GALAXY_SWORD.get());
-//        }
-//        @Override
-//        public void fillItemList(NonNullList<ItemStack> items) {
-//            super.fillItemList(items);
-//            items.sort(Comparator.comparing(e -> e.getDisplayName().getString()));
-//        }
-//    };
-//    public static final CreativeModeTab CROPS_TAB = new CreativeModeTab("cropstab") {
-//        @Override
-//        public ItemStack makeIcon() {
-//            return new ItemStack(ModCrops.CAULIFLOWER.get());
-//        }
-//        @Override
-//        public void fillItemList(NonNullList<ItemStack> items) {
-//            super.fillItemList(items);
-//            items.sort(Comparator.comparing(e -> e.getDisplayName().getString()));
-//         }
-//   };
-
-
+    @SubscribeEvent
+    public static void buildContents(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+//            event.accept(ModTools.AXE);
+        }
+    }
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

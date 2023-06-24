@@ -21,8 +21,11 @@ public class ModCrops {
 
     public static final RegistryObject<Item> CAULIFLOWER = ITEMS.register("cauliflower",
             () -> new Item(new Item.Properties()
-                    .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())
-                    ));
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationMod(2f)
+                            .build()
+                    )));
 
 
     public static final RegistryObject<Item> PARSNIP_SEEDS = ITEMS.register("parsnip_seeds",
@@ -30,9 +33,35 @@ public class ModCrops {
 
     public static final RegistryObject<Item> PARSNIP = ITEMS.register("parsnip",
             () -> new Item(new Item.Properties()
-                    .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())
-                    ));
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationMod(2f)
+                            .build()
+                    )));
 
+
+    public static final RegistryObject<Item> GARLIC_SEEDS = ITEMS.register("garlic_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.GARLIC_CROP.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationMod(2f)
+                            .build()
+                    )));
+
+
+    public static final RegistryObject<Item> JAZZ_SEEDS = ITEMS.register("jazz_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.BLUE_JAZZ_CROP.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> BLUE_JAZZ = ITEMS.register("blue_jazz",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationMod(2f)
+                            .build()
+                    )));
 
 
     public static void register(IEventBus eventBus) { ITEMS.register(eventBus); }
