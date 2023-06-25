@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "stardewvalley:block/coffee_bean_stage_1"
+  },
+  "render_type": "cutout"
+}

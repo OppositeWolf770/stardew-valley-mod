@@ -4,6 +4,7 @@ import net.daniel.stardewvalley.StardewValley;
 import net.daniel.stardewvalley.block.custom.CrystalariumBlock;
 import net.daniel.stardewvalley.block.custom.ScarecrowBlock;
 import net.daniel.stardewvalley.block.custom.crops.ModCropBlock;
+import net.daniel.stardewvalley.block.custom.crops.RegrowableCropBlock;
 import net.daniel.stardewvalley.item.ModCrops;
 import net.daniel.stardewvalley.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -25,11 +26,13 @@ public class ModBlocks {
     // Add Blocks below this comment
     public static final RegistryObject<Block> SCARECROW = registerBlock("scarecrow",
             () -> new ScarecrowBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()));
+                    .strength(6f)
+                    .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> CRYSTALARIUM = registerBlock("crystalarium",
             () -> new CrystalariumBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()));
+                    .strength(6f)
+                    .requiresCorrectToolForDrops()));
 
 
     // Crops
@@ -58,6 +61,23 @@ public class ModBlocks {
             () -> new ModCropBlock(
                     BlockBehaviour.Properties.copy(Blocks.WHEAT),
                     ModCrops.JAZZ_SEEDS
+            )
+    );
+
+
+    public static final RegistryObject<Block> COFFEE_BEAN_CROP = BLOCKS.register("coffee_bean_crop",
+            () -> new RegrowableCropBlock(
+                    BlockBehaviour.Properties.copy(Blocks.WHEAT),
+                    ModCrops.COFFEE_BEAN,
+                    ModCrops.COFFEE_BEAN
+            )
+    );
+
+    public static final RegistryObject<Block> ANCIENT_FRUIT_CROP = BLOCKS.register("ancient_fruit_crop",
+            () -> new RegrowableCropBlock(
+                    BlockBehaviour.Properties.copy(Blocks.WHEAT),
+                    ModCrops.ANCIENT_FRUIT_SEEDS,
+                    ModCrops.ANCIENT_FRUIT
             )
     );
 

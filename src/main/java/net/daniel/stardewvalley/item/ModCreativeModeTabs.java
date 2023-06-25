@@ -254,6 +254,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModCrops.GARLIC_SEEDS.get());
                         output.accept(ModCrops.BLUE_JAZZ.get());
                         output.accept(ModCrops.JAZZ_SEEDS.get());
+                        output.accept(ModCrops.COFFEE_BEAN.get());
+                        output.accept(ModCrops.ANCIENT_FRUIT.get());
+                        output.accept(ModCrops.ANCIENT_FRUIT_SEEDS.get());
                     })
                     .build());
 

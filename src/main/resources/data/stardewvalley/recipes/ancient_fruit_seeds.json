@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "stardewvalley:artifact_ancient_seed"
+    }
+  ],
+  "result": {
+    "item": "stardewvalley:ancient_fruit_seeds"
+  }
+}

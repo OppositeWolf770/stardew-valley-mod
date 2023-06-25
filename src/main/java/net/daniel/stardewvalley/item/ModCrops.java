@@ -18,7 +18,6 @@ public class ModCrops {
 
     public static final RegistryObject<Item> CAULIFLOWER_SEEDS = ITEMS.register("cauliflower_seeds",
             () -> new BlockItem(ModBlocks.CAULIFLOWER_CROP.get(), new Item.Properties()));
-
     public static final RegistryObject<Item> CAULIFLOWER = ITEMS.register("cauliflower",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
@@ -30,7 +29,6 @@ public class ModCrops {
 
     public static final RegistryObject<Item> PARSNIP_SEEDS = ITEMS.register("parsnip_seeds",
             () -> new ItemNameBlockItem(ModBlocks.PARSNIP_CROP.get(), new Item.Properties()));
-
     public static final RegistryObject<Item> PARSNIP = ITEMS.register("parsnip",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
@@ -39,10 +37,8 @@ public class ModCrops {
                             .build()
                     )));
 
-
     public static final RegistryObject<Item> GARLIC_SEEDS = ITEMS.register("garlic_seeds",
             () -> new ItemNameBlockItem(ModBlocks.GARLIC_CROP.get(), new Item.Properties()));
-
     public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
@@ -51,11 +47,22 @@ public class ModCrops {
                             .build()
                     )));
 
-
     public static final RegistryObject<Item> JAZZ_SEEDS = ITEMS.register("jazz_seeds",
             () -> new ItemNameBlockItem(ModBlocks.BLUE_JAZZ_CROP.get(), new Item.Properties()));
-
     public static final RegistryObject<Item> BLUE_JAZZ = ITEMS.register("blue_jazz",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationMod(2f)
+                            .build()
+                    )));
+
+    public static final RegistryObject<Item> COFFEE_BEAN = ITEMS.register("coffee_bean",
+            () -> new ItemNameBlockItem(ModBlocks.COFFEE_BEAN_CROP.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> ANCIENT_FRUIT_SEEDS = ITEMS.register("ancient_fruit_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.ANCIENT_FRUIT_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ANCIENT_FRUIT = ITEMS.register("ancient_fruit",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
                             .nutrition(2)
