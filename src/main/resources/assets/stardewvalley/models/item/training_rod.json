@@ -1,6 +1,14 @@
 {
-  "parent": "item/handheld",
+  "parent": "item/handheld_rod",
   "textures": {
     "layer0": "stardewvalley:item/training_rod"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "cast": 1
+      },
+      "model": "stardewvalley:item/training_rod_cast"
+    }
+  ]
 }

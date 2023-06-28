@@ -4,6 +4,14 @@ import com.mojang.logging.LogUtils;
 import net.daniel.stardewvalley.block.ModBlocks;
 import net.daniel.stardewvalley.item.*;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.FishingRodItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +20,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
+import javax.annotation.Nullable;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(StardewValley.MODID)
@@ -36,9 +46,9 @@ public class StardewValley {
         ModMinerals.register(modEventBus);
         ModArtifacts.register(modEventBus);
         ModCrops.register(modEventBus);
+        ModFish.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModTools.register(modEventBus);
-
 
         modEventBus.addListener(this::commonSetup);
 
@@ -49,12 +59,36 @@ public class StardewValley {
 
     }
 
+    private void clientSetup(final FMLClientSetupEvent event) {
+
+    }
+
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            event.enqueueWork(() -> {
+                ItemProperties.register(ModTools.FIBERGLASS_ROD.get(),
+                        new ResourceLocation("cast"), ClientModEvents::FishingPoleProperty);
+                ItemProperties.register(ModTools.TRAINING_ROD.get(),
+                        new ResourceLocation("cast"), ClientModEvents::FishingPoleProperty);
+            });
+        }
 
+        static float FishingPoleProperty(ItemStack pStack, @Nullable ClientLevel pLevel, @Nullable LivingEntity pEntity, int pSeed) {
+            if (pEntity == null) {
+                return 0.0F;
+            } else {
+                boolean flag = pEntity.getMainHandItem() == pStack;
+                boolean flag1 = pEntity.getOffhandItem() == pStack;
+                if (pEntity.getMainHandItem().getItem() instanceof FishingRodItem) {
+                    flag1 = false;
+                }
+
+                return (flag || flag1) && pEntity instanceof Player && ((Player)pEntity).fishing != null ? 1.0F : 0.0F;
+            }
         }
     }
 }
+

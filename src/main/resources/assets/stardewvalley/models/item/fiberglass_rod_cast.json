@@ -1,0 +1,6 @@
+{
+  "parent": "stardewvalley:item/fiberglass_rod",
+  "textures": {
+    "layer0": "stardewvalley:item/fiberglass_rod_cast"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "stardewvalley:item/training_rod",
+  "textures": {
+    "layer0": "stardewvalley:item/training_rod_cast"
+  }
+}

@@ -1,6 +1,14 @@
 {
-  "parent": "item/handheld",
+  "parent": "item/handheld_rod",
   "textures": {
     "layer0": "stardewvalley:item/fiberglass_rod"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "cast": 1
+      },
+      "model": "stardewvalley:item/fiberglass_rod_cast"
+    }
+  ]
 }
