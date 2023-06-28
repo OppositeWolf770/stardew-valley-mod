@@ -78,6 +78,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModArtifacts.ARTIFACT_LOST_BOOK.get());
                         output.accept(ModBlocks.CRYSTALARIUM.get());
                         output.accept(ModBlocks.SCARECROW.get());
+                        output.accept(ModBlocks.KEG.get());
+                        output.accept(ModBlocks.BEE_HOUSE.get());
                     })
                     .build());
    public static RegistryObject<CreativeModeTab> MINERALS_TAB = CREATIVE_MODE_TABS.register("mineralstab", () ->
@@ -257,6 +259,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModCrops.COFFEE_BEAN.get());
                         output.accept(ModCrops.ANCIENT_FRUIT.get());
                         output.accept(ModCrops.ANCIENT_FRUIT_SEEDS.get());
+                    })
+                    .build());
+
+    public static RegistryObject<CreativeModeTab> FISH_TAB = CREATIVE_MODE_TABS.register("fishtab", () ->
+            CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModFish.ANCHOVY.get()))
+                    .title(Component.translatable("itemGroup.fishtab"))
+                    .displayItems((displayParams, output) -> {
+                        output.accept(ModFish.ANCHOVY.get());
+                        output.accept(ModFish.PUFFERFISH.get());
                     })
                     .build());
 

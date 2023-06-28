@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "stardewvalley:block/keg",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "stardewvalley:block/keg"
+    },
+    "facing=south": {
+      "model": "stardewvalley:block/keg",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "stardewvalley:block/keg",
+      "y": 270
+    }
+  }
+}

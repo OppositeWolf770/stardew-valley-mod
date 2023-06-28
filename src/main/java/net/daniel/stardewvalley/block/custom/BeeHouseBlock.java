@@ -11,6 +11,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.*;
@@ -21,16 +22,16 @@ import org.jetbrains.annotations.Nullable;
 
 
 // TODO - Finish adding the hitboxes for the scarecrow directions
-public class CrystalariumBlock extends Block {
+public class BeeHouseBlock extends Block {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
-    protected static final VoxelShape EAST_SHAPE = Block.box(0, 0, 1, 16, 16, 16);
-    protected static final VoxelShape WEST_SHAPE = Block.box(0, 0, 1, 16, 16, 16);
-    protected static final VoxelShape NORTH_SHAPE = Block.box(0, 0, 1, 16, 16, 16);
-    protected static final VoxelShape SOUTH_SHAPE = Block.box(0, 0, 1, 16, 16, 16);
+    protected static final VoxelShape EAST_SHAPE = Block.box(1, 0, 1, 15, 16, 15);
+    protected static final VoxelShape WEST_SHAPE = Block.box(1, 0, 1, 15, 16, 15);
+    protected static final VoxelShape NORTH_SHAPE = Block.box(1, 0, 1, 15, 16, 15);
+    protected static final VoxelShape SOUTH_SHAPE = Block.box(1, 0, 1, 15, 16, 15);
 
 
-    public CrystalariumBlock(Properties pProperties) {
+    public BeeHouseBlock(BlockBehaviour.Properties pProperties) {
         super(pProperties);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.SOUTH).setValue(HALF, DoubleBlockHalf.LOWER));
     }

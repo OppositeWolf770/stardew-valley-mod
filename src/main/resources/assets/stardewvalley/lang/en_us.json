@@ -186,6 +186,7 @@
 
   "block.stardewvalley.crystalarium": "Crystalarium",
   "block.stardewvalley.scarecrow": "Scarecrow",
+  "block.stardewvalley.bee_house": "Bee House",
 
 
   "item.stardewvalley.cauliflower": "Cauliflower",
@@ -218,5 +219,6 @@
   "itemGroup.mineralstab": "Minerals",
   "itemGroup.weaponstab": "Weapons",
   "itemGroup.toolstab": "Tools",
-  "itemGroup.cropstab": "Crops"
+  "itemGroup.cropstab": "Crops",
+  "itemGroup.fishtab": "Fish"
 }

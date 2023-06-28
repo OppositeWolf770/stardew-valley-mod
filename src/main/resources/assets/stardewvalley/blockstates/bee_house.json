@@ -1,33 +1,33 @@
 {
   "variants": {
     "facing=east,half=lower": {
-      "model": "stardewvalley:block/crystalarium",
+      "model": "stardewvalley:block/bee_house",
       "y": 90
     },
     "facing=east,half=upper": {
-      "model": "stardewvalley:block/crystalarium_top",
+      "model": "stardewvalley:block/bee_house_top",
       "y": 90
     },
     "facing=north,half=lower": {
-    "model": "stardewvalley:block/crystalarium"
+    "model": "stardewvalley:block/bee_house"
     },
     "facing=north,half=upper": {
-      "model": "stardewvalley:block/crystalarium_top"
+      "model": "stardewvalley:block/bee_house_top"
     },
     "facing=south,half=lower": {
-      "model": "stardewvalley:block/crystalarium",
+      "model": "stardewvalley:block/bee_house",
       "y": 180
     },
     "facing=south,half=upper": {
-      "model": "stardewvalley:block/crystalarium_top",
+      "model": "stardewvalley:block/bee_house_top",
       "y": 180
     },
     "facing=west,half=lower": {
-      "model": "stardewvalley:block/crystalarium",
+      "model": "stardewvalley:block/bee_house",
       "y": 270
     },
     "facing=west,half=upper": {
-      "model": "stardewvalley:block/crystalarium_top",
+      "model": "stardewvalley:block/bee_house_top",
       "y": 270
     }
   }

@@ -1,7 +1,9 @@
 package net.daniel.stardewvalley.block;
 
 import net.daniel.stardewvalley.StardewValley;
+import net.daniel.stardewvalley.block.custom.BeeHouseBlock;
 import net.daniel.stardewvalley.block.custom.CrystalariumBlock;
+import net.daniel.stardewvalley.block.custom.KegBlock;
 import net.daniel.stardewvalley.block.custom.ScarecrowBlock;
 import net.daniel.stardewvalley.block.custom.crops.ModCropBlock;
 import net.daniel.stardewvalley.block.custom.crops.RegrowableCropBlock;
@@ -12,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -27,12 +30,32 @@ public class ModBlocks {
     public static final RegistryObject<Block> SCARECROW = registerBlock("scarecrow",
             () -> new ScarecrowBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(6f)
-                    .requiresCorrectToolForDrops()));
+                    .requiresCorrectToolForDrops()
+            )
+    );
 
     public static final RegistryObject<Block> CRYSTALARIUM = registerBlock("crystalarium",
             () -> new CrystalariumBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(6f)
-                    .requiresCorrectToolForDrops()));
+                    .requiresCorrectToolForDrops()
+            )
+    );
+
+    public static final RegistryObject<Block> KEG = registerBlock("keg",
+            () -> new KegBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(6f)
+                    .requiresCorrectToolForDrops()
+
+            )
+    );
+
+    public static final RegistryObject<Block> BEE_HOUSE = registerBlock("bee_house",
+            () -> new BeeHouseBlock(BlockBehaviour.Properties.of()
+                    .pushReaction(PushReaction.PUSH_ONLY)
+                    .strength(6f)
+                    .requiresCorrectToolForDrops()
+            )
+    );
 
 
     // Crops
