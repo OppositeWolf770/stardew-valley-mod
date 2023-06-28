@@ -1,7 +1,7 @@
 {
-  "parent": "block/crop",
+  "parent": "stardewvalley:block/cross",
   "textures": {
-    "crop": "stardewvalley:block/parsnip_stage_1"
+    "cross": "stardewvalley:block/parsnip_stage_1"
   },
   "render_type": "cutout"
 }
