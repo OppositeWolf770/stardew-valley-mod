@@ -1,10 +1,7 @@
 package net.daniel.stardewvalley.block;
 
 import net.daniel.stardewvalley.StardewValley;
-import net.daniel.stardewvalley.block.custom.BeeHouseBlock;
-import net.daniel.stardewvalley.block.custom.CrystalariumBlock;
-import net.daniel.stardewvalley.block.custom.KegBlock;
-import net.daniel.stardewvalley.block.custom.ScarecrowBlock;
+import net.daniel.stardewvalley.block.custom.*;
 import net.daniel.stardewvalley.block.custom.crops.ModCropBlock;
 import net.daniel.stardewvalley.block.custom.crops.RegrowableCropBlock;
 import net.daniel.stardewvalley.item.ModCrops;
@@ -51,6 +48,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BEE_HOUSE = registerBlock("bee_house",
             () -> new BeeHouseBlock(BlockBehaviour.Properties.of()
+                    .pushReaction(PushReaction.PUSH_ONLY)
+                    .strength(6f)
+                    .requiresCorrectToolForDrops()
+            )
+    );
+
+    public static final RegistryObject<Block> RECYCLING_MACHINE = registerBlock("recycling_machine",
+            () -> new RecyclingMachineBlock(BlockBehaviour.Properties.of()
                     .pushReaction(PushReaction.PUSH_ONLY)
                     .strength(6f)
                     .requiresCorrectToolForDrops()
