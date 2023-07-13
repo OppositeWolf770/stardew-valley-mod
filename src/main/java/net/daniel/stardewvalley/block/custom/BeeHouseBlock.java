@@ -21,7 +21,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 
-// TODO - Finish adding the hitboxes for the scarecrow directions
 public class BeeHouseBlock extends Block {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;

@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:dolomite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:dolomite"
+  },
+  "processingTime": 83000
+}

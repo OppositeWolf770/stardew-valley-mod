@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:lunarite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:lunarite"
+  },
+  "processingTime": 83000
+}

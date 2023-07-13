@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:keg",
+  "ingredients": [
+    {
+      "item": "stardewvalley:aquamarine"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:calcite",
+    "count": 3
+  }
+}

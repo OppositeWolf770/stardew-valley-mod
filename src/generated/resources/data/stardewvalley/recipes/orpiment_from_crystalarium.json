@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:orpiment"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:orpiment"
+  },
+  "processingTime": 83000
+}

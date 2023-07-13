@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:aquamarine"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:aquamarine"
+  },
+  "processingTime": 24000
+}

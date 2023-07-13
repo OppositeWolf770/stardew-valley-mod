@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewvalley:tigerseye"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tigerseye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "stardewvalley:tigerseye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_tigerseye",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewvalley:tigerseye"
+    ]
+  },
+  "sends_telemetry_event": true
+}

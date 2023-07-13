@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:celestine"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:celestine"
+  },
+  "processingTime": 83000
+}

@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:helvite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:helvite"
+  },
+  "processingTime": 83000
+}

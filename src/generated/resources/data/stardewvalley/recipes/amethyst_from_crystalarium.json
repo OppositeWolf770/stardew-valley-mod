@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:amethyst"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:amethyst"
+  },
+  "processingTime": 22000
+}

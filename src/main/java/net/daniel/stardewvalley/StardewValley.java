@@ -2,8 +2,14 @@ package net.daniel.stardewvalley;
 
 import com.mojang.logging.LogUtils;
 import net.daniel.stardewvalley.block.ModBlocks;
+import net.daniel.stardewvalley.block.entity.ModBlockEntities;
 import net.daniel.stardewvalley.item.*;
+import net.daniel.stardewvalley.recipe.ModRecipes;
+import net.daniel.stardewvalley.screen.CrystalariumScreen;
+import net.daniel.stardewvalley.screen.KegScreen;
+import net.daniel.stardewvalley.screen.ModMenuTypes;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
@@ -24,9 +30,9 @@ import org.slf4j.Logger;
 import javax.annotation.Nullable;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(StardewValley.MODID)
+@Mod(StardewValley.MOD_ID)
 public class StardewValley {
-    public static final String MODID = "stardewvalley";
+    public static final String MOD_ID = "stardewvalley";
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
@@ -47,8 +53,14 @@ public class StardewValley {
         ModArtifacts.register(modEventBus);
         ModCrops.register(modEventBus);
         ModFish.register(modEventBus);
-        ModBlocks.register(modEventBus);
         ModTools.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+
+        ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -62,7 +74,7 @@ public class StardewValley {
 
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
@@ -71,6 +83,9 @@ public class StardewValley {
                         new ResourceLocation("cast"), ClientModEvents::FishingPoleProperty);
                 ItemProperties.register(ModTools.TRAINING_ROD.get(),
                         new ResourceLocation("cast"), ClientModEvents::FishingPoleProperty);
+
+                MenuScreens.register(ModMenuTypes.KEG_MENU.get(), KegScreen::new);
+                MenuScreens.register(ModMenuTypes.CRYSTALARIUM_MENU.get(), CrystalariumScreen::new);
             });
         }
 

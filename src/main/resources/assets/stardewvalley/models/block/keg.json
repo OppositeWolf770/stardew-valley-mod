@@ -3,7 +3,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "stardewvalley:block/keg",
-		"particle": "stardewvalley:block/keg"
+		"particle": "stardewvalley:block/keg_particle"
 	},
 	"elements": [
 		{

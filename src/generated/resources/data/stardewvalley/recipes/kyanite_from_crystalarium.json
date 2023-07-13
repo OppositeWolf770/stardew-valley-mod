@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:kyanite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:kyanite"
+  },
+  "processingTime": 83000
+}

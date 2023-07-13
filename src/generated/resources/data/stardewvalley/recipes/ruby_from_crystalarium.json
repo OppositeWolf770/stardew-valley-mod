@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:ruby"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:ruby"
+  },
+  "processingTime": 48000
+}

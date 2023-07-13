@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:jamborite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:jamborite"
+  },
+  "processingTime": 83000
+}

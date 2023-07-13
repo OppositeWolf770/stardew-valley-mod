@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:baryte"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:baryte"
+  },
+  "processingTime": 83000
+}

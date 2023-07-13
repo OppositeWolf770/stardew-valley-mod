@@ -8,7 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, StardewValley.MODID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, StardewValley.MOD_ID);
 
     // Add Items below this comment
 

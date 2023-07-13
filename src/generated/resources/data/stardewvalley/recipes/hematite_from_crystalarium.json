@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:hematite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:hematite"
+  },
+  "processingTime": 83000
+}

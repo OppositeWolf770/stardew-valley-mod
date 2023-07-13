@@ -13,7 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModCrops {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, StardewValley.MODID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, StardewValley.MOD_ID);
 
 
     public static final RegistryObject<Item> CAULIFLOWER_SEEDS = ITEMS.register("cauliflower_seeds",

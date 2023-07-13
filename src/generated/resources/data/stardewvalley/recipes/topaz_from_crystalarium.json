@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:topaz"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:topaz"
+  },
+  "processingTime": 18000
+}

@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:slate"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:slate"
+  },
+  "processingTime": 83000
+}

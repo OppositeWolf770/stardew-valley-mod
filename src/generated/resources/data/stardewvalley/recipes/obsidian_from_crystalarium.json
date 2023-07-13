@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:obsidian"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:obsidian"
+  },
+  "processingTime": 83000
+}

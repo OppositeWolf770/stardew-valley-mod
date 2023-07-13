@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:earth_crystal"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:earth_crystal"
+  },
+  "processingTime": 13000
+}

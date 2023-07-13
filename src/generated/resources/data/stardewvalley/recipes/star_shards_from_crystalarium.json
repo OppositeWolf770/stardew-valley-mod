@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:star_shards"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:star_shards"
+  },
+  "processingTime": 83000
+}

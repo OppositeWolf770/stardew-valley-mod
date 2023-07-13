@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:esperite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:esperite"
+  },
+  "processingTime": 83000
+}

@@ -8,11 +8,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-// TODO add translations for fishs
+//TODO add translations for fishs
 
 public class ModFish {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, StardewValley.MODID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, StardewValley.MOD_ID);
 
     public static final RegistryObject<Item> ANCHOVY = ITEMS.register("anchovy",
             () -> new FishItem(new Item.Properties(),

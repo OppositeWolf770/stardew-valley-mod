@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:quartz"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:quartz"
+  },
+  "processingTime": 7000
+}

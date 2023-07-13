@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:nekoite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:nekoite"
+  },
+  "processingTime": 83000
+}

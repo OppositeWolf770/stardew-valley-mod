@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:fluorapatite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:fluorapatite"
+  },
+  "processingTime": 83000
+}

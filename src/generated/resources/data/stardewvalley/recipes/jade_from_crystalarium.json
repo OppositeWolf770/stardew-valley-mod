@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:jade"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:jade"
+  },
+  "processingTime": 40000
+}

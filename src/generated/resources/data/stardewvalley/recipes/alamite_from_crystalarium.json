@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:alamite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:alamite"
+  },
+  "processingTime": 83000
+}

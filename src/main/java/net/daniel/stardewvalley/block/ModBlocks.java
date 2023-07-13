@@ -21,7 +21,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, StardewValley.MODID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, StardewValley.MOD_ID);
 
     // Add Blocks below this comment
     public static final RegistryObject<Block> SCARECROW = registerBlock("scarecrow",
@@ -30,22 +30,19 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             )
     );
-
     public static final RegistryObject<Block> CRYSTALARIUM = registerBlock("crystalarium",
             () -> new CrystalariumBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(6f)
                     .requiresCorrectToolForDrops()
             )
     );
-
-    public static final RegistryObject<Block> KEG = registerBlock("keg",
+    public static final RegistryObject<KegBlock> KEG = registerBlock("keg",
             () -> new KegBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(6f)
                     .requiresCorrectToolForDrops()
 
             )
     );
-
     public static final RegistryObject<Block> BEE_HOUSE = registerBlock("bee_house",
             () -> new BeeHouseBlock(BlockBehaviour.Properties.of()
                     .pushReaction(PushReaction.PUSH_ONLY)
@@ -53,8 +50,14 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             )
     );
-
     public static final RegistryObject<Block> RECYCLING_MACHINE = registerBlock("recycling_machine",
+            () -> new RecyclingMachineBlock(BlockBehaviour.Properties.of()
+                    .pushReaction(PushReaction.PUSH_ONLY)
+                    .strength(6f)
+                    .requiresCorrectToolForDrops()
+            )
+    );
+    public static final RegistryObject<Block> PRESERVES_JAR = registerBlock("preserves_jar",
             () -> new RecyclingMachineBlock(BlockBehaviour.Properties.of()
                     .pushReaction(PushReaction.PUSH_ONLY)
                     .strength(6f)

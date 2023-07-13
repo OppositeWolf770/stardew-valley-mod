@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:geminite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:geminite"
+  },
+  "processingTime": 83000
+}

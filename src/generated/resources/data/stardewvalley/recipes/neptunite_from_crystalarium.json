@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:neptunite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:neptunite"
+  },
+  "processingTime": 83000
+}

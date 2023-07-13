@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:petrified_slime"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:petrified_slime"
+  },
+  "processingTime": 83000
+}

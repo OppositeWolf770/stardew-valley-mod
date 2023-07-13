@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:limestone"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:limestone"
+  },
+  "processingTime": 83000
+}

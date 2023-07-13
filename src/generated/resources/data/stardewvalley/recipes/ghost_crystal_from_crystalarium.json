@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:ghost_crystal"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:ghost_crystal"
+  },
+  "processingTime": 83000
+}

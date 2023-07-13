@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:ocean_stone"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:ocean_stone"
+  },
+  "processingTime": 83000
+}

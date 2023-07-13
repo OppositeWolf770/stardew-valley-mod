@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:pyrite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:pyrite"
+  },
+  "processingTime": 83000
+}

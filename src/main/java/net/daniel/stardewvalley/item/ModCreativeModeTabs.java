@@ -15,71 +15,73 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 
-@Mod.EventBusSubscriber(modid = StardewValley.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = StardewValley.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB,
-            StardewValley.MODID);
+            StardewValley.MOD_ID);
 
     public static RegistryObject<CreativeModeTab> ARTIFACTS_TAB = CREATIVE_MODE_TABS.register("artifactstab", () ->
             CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModArtifacts.ARTIFACT_LOST_BOOK.get()))
+                    .icon(() -> new ItemStack(ModArtifacts.LOST_BOOK.get()))
                     .title(Component.translatable("itemGroup.artifactstab"))
                     .displayItems((displayParams, output) -> {
-                        output.accept(ModArtifacts.ARTIFACT_ANCIENT_DOLL.get());
-                        output.accept(ModArtifacts.ARTIFACT_ANCIENT_DRUM.get());
-                        output.accept(ModArtifacts.ARTIFACT_ANCIENT_SEED.get());
-                        output.accept(ModArtifacts.ARTIFACT_ANCIENT_SWORD.get());
-                        output.accept(ModArtifacts.ARTIFACT_ANCHOR.get());
-                        output.accept(ModArtifacts.ARTIFACT_ARROWHEAD.get());
-                        output.accept(ModArtifacts.ARTIFACT_AMPHIBIAN_FOSSIL.get());
-                        output.accept(ModArtifacts.ARTIFACT_BONE_FLUTE.get());
-                        output.accept(ModArtifacts.ARTIFACT_CHICKEN_STATUE.get());
-                        output.accept(ModArtifacts.ARTIFACT_CHIPPED_AMPHORA.get());
-                        output.accept(ModArtifacts.ARTIFACT_CHEWING_STICK.get());
-                        output.accept(ModArtifacts.ARTIFACT_DINOSAUR_EGG.get());
-                        output.accept(ModArtifacts.ARTIFACT_DRIED_STARFISH.get());
-                        output.accept(ModArtifacts.ARTIFACT_DWARF_GADGET.get());
-                        output.accept(ModArtifacts.ARTIFACT_DWARF_SCROLL_1.get());
-                        output.accept(ModArtifacts.ARTIFACT_DWARF_SCROLL_2.get());
-                        output.accept(ModArtifacts.ARTIFACT_DWARF_SCROLL_3.get());
-                        output.accept(ModArtifacts.ARTIFACT_DWARF_SCROLL_4.get());
-                        output.accept(ModArtifacts.ARTIFACT_DWARVISH_HELM.get());
-                        output.accept(ModArtifacts.ARTIFACT_ELVISH_JEWELRY.get());
-                        output.accept(ModArtifacts.ARTIFACT_GLASS_SHARDS.get());
-                        output.accept(ModArtifacts.ARTIFACT_GOLDEN_MASK.get());
-                        output.accept(ModArtifacts.ARTIFACT_GOLDEN_RELIC.get());
-                        output.accept(ModArtifacts.ARTIFACT_NAUTILUS_FOSSIL.get());
-                        output.accept(ModArtifacts.ARTIFACT_ORNAMENTAL_FAN.get());
-                        output.accept(ModArtifacts.ARTIFACT_PALM_FOSSIL.get());
-                        output.accept(ModArtifacts.ARTIFACT_PREHISTORIC_HANDAXE.get());
-                        output.accept(ModArtifacts.ARTIFACT_PREHISTORIC_RIB.get());
-                        output.accept(ModArtifacts.ARTIFACT_PREHISTORIC_SCAPULA.get());
-                        output.accept(ModArtifacts.ARTIFACT_PREHISTORIC_SKULL.get());
-                        output.accept(ModArtifacts.ARTIFACT_PREHISTORIC_TIBIA.get());
-                        output.accept(ModArtifacts.ARTIFACT_PREHISTORIC_TOOL.get());
-                        output.accept(ModArtifacts.ARTIFACT_PREHISTORIC_VERTEBRA.get());
-                        output.accept(ModArtifacts.ARTIFACT_RARE_DISC.get());
-                        output.accept(ModArtifacts.ARTIFACT_RUSTY_COG.get());
-                        output.accept(ModArtifacts.ARTIFACT_RUSTY_SPOON.get());
-                        output.accept(ModArtifacts.ARTIFACT_RUSTY_SPUR.get());
-                        output.accept(ModArtifacts.ARTIFACT_SKELETAL_HAND.get());
-                        output.accept(ModArtifacts.ARTIFACT_SKELETAL_TAIL.get());
-                        output.accept(ModArtifacts.ARTIFACT_STRANGE_DOLL_GREEN.get());
-                        output.accept(ModArtifacts.ARTIFACT_STRANGE_DOLL_RED.get());
-                        output.accept(ModArtifacts.ARTIFACT_TRILOBITE.get());
+                        output.accept(ModArtifacts.ANCIENT_DOLL.get());
+                        output.accept(ModArtifacts.ANCIENT_DRUM.get());
+                        output.accept(ModArtifacts.ANCIENT_SEED.get());
+                        output.accept(ModArtifacts.ANCIENT_SWORD.get());
+                        output.accept(ModArtifacts.ANCHOR.get());
+                        output.accept(ModArtifacts.ARROWHEAD.get());
+                        output.accept(ModArtifacts.AMPHIBIAN_FOSSIL.get());
+                        output.accept(ModArtifacts.BONE_FLUTE.get());
+                        output.accept(ModArtifacts.CHICKEN_STATUE.get());
+                        output.accept(ModArtifacts.CHIPPED_AMPHORA.get());
+                        output.accept(ModArtifacts.CHEWING_STICK.get());
+                        output.accept(ModArtifacts.DINOSAUR_EGG.get());
+                        output.accept(ModArtifacts.DRIED_STARFISH.get());
+                        output.accept(ModArtifacts.DWARF_GADGET.get());
+                        output.accept(ModArtifacts.DWARF_SCROLL_1.get());
+                        output.accept(ModArtifacts.DWARF_SCROLL_2.get());
+                        output.accept(ModArtifacts.DWARF_SCROLL_3.get());
+                        output.accept(ModArtifacts.DWARF_SCROLL_4.get());
+                        output.accept(ModArtifacts.DWARVISH_HELM.get());
+                        output.accept(ModArtifacts.ELVISH_JEWELRY.get());
+                        output.accept(ModArtifacts.GLASS_SHARDS.get());
+                        output.accept(ModArtifacts.GOLDEN_MASK.get());
+                        output.accept(ModArtifacts.GOLDEN_RELIC.get());
+                        output.accept(ModArtifacts.NAUTILUS_FOSSIL.get());
+                        output.accept(ModArtifacts.ORNAMENTAL_FAN.get());
+                        output.accept(ModArtifacts.PALM_FOSSIL.get());
+                        output.accept(ModArtifacts.PREHISTORIC_HANDAXE.get());
+                        output.accept(ModArtifacts.PREHISTORIC_RIB.get());
+                        output.accept(ModArtifacts.PREHISTORIC_SCAPULA.get());
+                        output.accept(ModArtifacts.PREHISTORIC_SKULL.get());
+                        output.accept(ModArtifacts.PREHISTORIC_TIBIA.get());
+                        output.accept(ModArtifacts.PREHISTORIC_TOOL.get());
+                        output.accept(ModArtifacts.PREHISTORIC_VERTEBRA.get());
+                        output.accept(ModArtifacts.RARE_DISC.get());
+                        output.accept(ModArtifacts.RUSTY_COG.get());
+                        output.accept(ModArtifacts.RUSTY_SPOON.get());
+                        output.accept(ModArtifacts.RUSTY_SPUR.get());
+                        output.accept(ModArtifacts.SKELETAL_HAND.get());
+                        output.accept(ModArtifacts.SKELETAL_TAIL.get());
+                        output.accept(ModArtifacts.STRANGE_DOLL_GREEN.get());
+                        output.accept(ModArtifacts.STRANGE_DOLL_RED.get());
+                        output.accept(ModArtifacts.TRILOBITE.get());
                     })
                     .build());
 
     public static RegistryObject<CreativeModeTab> STARDEW_TAB = CREATIVE_MODE_TABS.register("stardewtab", () ->
             CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModArtifacts.ARTIFACT_CHICKEN_STATUE.get()))
+                    .icon(() -> new ItemStack(ModArtifacts.CHICKEN_STATUE.get()))
                     .title(Component.translatable("itemGroup.stardewtab"))
                     .displayItems((displayParams, output) -> {
-                        output.accept(ModArtifacts.ARTIFACT_LOST_BOOK.get());
+                        output.accept(ModArtifacts.LOST_BOOK.get());
                         output.accept(ModBlocks.CRYSTALARIUM.get());
                         output.accept(ModBlocks.SCARECROW.get());
                         output.accept(ModBlocks.KEG.get());
                         output.accept(ModBlocks.BEE_HOUSE.get());
+                        output.accept(ModBlocks.RECYCLING_MACHINE.get());
+                        output.accept(ModBlocks.PRESERVES_JAR.get());
                     })
                     .build());
    public static RegistryObject<CreativeModeTab> MINERALS_TAB = CREATIVE_MODE_TABS.register("mineralstab", () ->

@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:jasper"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:jasper"
+  },
+  "processingTime": 83000
+}

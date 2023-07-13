@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:sandstone"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:sandstone"
+  },
+  "processingTime": 83000
+}

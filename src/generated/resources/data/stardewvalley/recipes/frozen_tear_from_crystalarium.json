@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:frozen_tear"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:frozen_tear"
+  },
+  "processingTime": 18000
+}

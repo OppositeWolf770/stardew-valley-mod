@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:jagoite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:jagoite"
+  },
+  "processingTime": 83000
+}

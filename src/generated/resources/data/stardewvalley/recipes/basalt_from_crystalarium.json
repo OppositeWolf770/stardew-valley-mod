@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:basalt"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:basalt"
+  },
+  "processingTime": 83000
+}

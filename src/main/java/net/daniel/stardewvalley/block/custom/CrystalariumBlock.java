@@ -1,7 +1,12 @@
 package net.daniel.stardewvalley.block.custom;
 
+import net.daniel.stardewvalley.block.entity.CrystalariumBlockEntity;
+import net.daniel.stardewvalley.block.entity.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -11,17 +16,25 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.*;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 
-// TODO - Finish adding the hitboxes for the scarecrow directions
-public class CrystalariumBlock extends Block {
+public class CrystalariumBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
     protected static final VoxelShape EAST_SHAPE = Block.box(0, 0, 1, 16, 16, 16);
@@ -37,18 +50,14 @@ public class CrystalariumBlock extends Block {
 
 
     @Override
-    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+    public @NotNull VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         Direction direction = pState.getValue(FACING);
-        switch(direction) {
-            case WEST:
-                return WEST_SHAPE;
-            case NORTH:
-                return NORTH_SHAPE;
-            case SOUTH:
-                return SOUTH_SHAPE;
-            default:
-                return EAST_SHAPE;
-        }
+        return switch (direction) {
+            case WEST -> WEST_SHAPE;
+            case NORTH -> NORTH_SHAPE;
+            case SOUTH -> SOUTH_SHAPE;
+            default -> EAST_SHAPE;
+        };
     }
 
     @Override
@@ -120,5 +129,53 @@ public class CrystalariumBlock extends Block {
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(FACING, HALF);
+    }
+
+    @Nullable
+    @Override
+    public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+        return new CrystalariumBlockEntity(pPos, pState);
+    }
+
+    @Override
+    public RenderShape getRenderShape(BlockState pState) {
+        return RenderShape.MODEL;
+    }
+
+    @Override
+    public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
+        if (pState.getBlock() != pNewState.getBlock()) {
+            BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
+            if (blockEntity instanceof CrystalariumBlockEntity) {
+                ((CrystalariumBlockEntity) blockEntity).drops();
+            }
+        }
+        super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
+    }
+
+    @Override
+    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+        if (!pLevel.isClientSide()) {
+            BlockEntity entity = pLevel.getBlockEntity(pPos);
+            if (entity instanceof CrystalariumBlockEntity) {
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (CrystalariumBlockEntity)entity, pPos);
+            } else {
+                throw new IllegalStateException("Our Container provider is missing!");
+            }
+        }
+
+        return InteractionResult.sidedSuccess(pLevel.isClientSide());
+    }
+
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
+        if (pLevel.isClientSide()) {
+            return null;
+        }
+
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.CRYSTALARIUM_BLOCK_ENTITY.get(),
+                (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1)
+        );
     }
 }

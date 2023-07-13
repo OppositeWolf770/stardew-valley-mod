@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:weather_check",
+              "raining": false
+            }
+          ],
+          "name": "stardewvalley:pufferfish",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:anchovy",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:tuna",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:sardine",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:red_mullet",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:herring",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:weather_check",
+              "raining": true
+            }
+          ],
+          "name": "stardewvalley:eel",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:octopus",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:weather_check",
+              "raining": true
+            }
+          ],
+          "name": "stardewvalley:red_snapper",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:squid",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:sea_cucumber",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:super_cucumber",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:flounder",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:tilapia",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:albacore",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:halibut",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:lionfish",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewvalley:crimsonfish",
+          "weight": 0.001
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/fishing/test"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:diamond"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:diamond"
+  },
+  "processingTime": 120000
+}

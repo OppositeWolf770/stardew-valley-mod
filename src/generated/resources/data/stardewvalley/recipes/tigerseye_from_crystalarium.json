@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:tigerseye"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:tigerseye"
+  },
+  "processingTime": 83000
+}

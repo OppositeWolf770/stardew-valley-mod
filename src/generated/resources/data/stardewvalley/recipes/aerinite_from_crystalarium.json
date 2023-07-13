@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:aerinite"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:aerinite"
+  },
+  "processingTime": 83000
+}

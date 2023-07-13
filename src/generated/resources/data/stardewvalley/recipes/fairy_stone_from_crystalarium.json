@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:fairy_stone"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:fairy_stone"
+  },
+  "processingTime": 83000
+}

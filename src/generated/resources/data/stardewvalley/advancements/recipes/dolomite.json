@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_opal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "stardewvalley:dolomite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewvalley:dolomite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_opal",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewvalley:dolomite"
+    ]
+  },
+  "sends_telemetry_event": true
+}

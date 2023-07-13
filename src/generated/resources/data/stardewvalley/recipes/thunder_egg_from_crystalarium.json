@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:thunder_egg"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:thunder_egg"
+  },
+  "processingTime": 83000
+}

@@ -1,0 +1,12 @@
+{
+  "type": "stardewvalley:crystalarium",
+  "ingredients": [
+    {
+      "item": "stardewvalley:fire_opal"
+    }
+  ],
+  "output": {
+    "item": "stardewvalley:fire_opal"
+  },
+  "processingTime": 83000
+}

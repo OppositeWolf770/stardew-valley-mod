@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fire_opal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "stardewvalley:fire_opal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewvalley:fire_opal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_fire_opal",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewvalley:fire_opal"
+    ]
+  },
+  "sends_telemetry_event": true
+}
