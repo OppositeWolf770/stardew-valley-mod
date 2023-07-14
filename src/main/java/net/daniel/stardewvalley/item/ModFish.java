@@ -8,7 +8,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-//TODO add translations for fishs
 
 public class ModFish {
     public static final DeferredRegister<Item> ITEMS =

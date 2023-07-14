@@ -9,11 +9,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
-public class PreservesJarScreen extends AbstractContainerScreen<CrystalariumMenu> {
+public class PreservesJarScreen extends AbstractContainerScreen<PreservesJarMenu> {
     private static final ResourceLocation TEXTURE =
             new ResourceLocation(StardewValley.MOD_ID, "textures/gui/basic_menu_gui.png");
 
-    public PreservesJarScreen(CrystalariumMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
+    public PreservesJarScreen(PreservesJarMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
     }
 

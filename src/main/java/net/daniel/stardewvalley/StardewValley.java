@@ -5,9 +5,7 @@ import net.daniel.stardewvalley.block.ModBlocks;
 import net.daniel.stardewvalley.block.entity.ModBlockEntities;
 import net.daniel.stardewvalley.item.*;
 import net.daniel.stardewvalley.recipe.ModRecipes;
-import net.daniel.stardewvalley.screen.CrystalariumScreen;
-import net.daniel.stardewvalley.screen.KegScreen;
-import net.daniel.stardewvalley.screen.ModMenuTypes;
+import net.daniel.stardewvalley.screen.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -79,6 +77,9 @@ public class StardewValley {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             event.enqueueWork(() -> {
+
+                // TODO finish adding the rest of the fishing rods in here.
+
                 ItemProperties.register(ModTools.FIBERGLASS_ROD.get(),
                         new ResourceLocation("cast"), ClientModEvents::FishingPoleProperty);
                 ItemProperties.register(ModTools.TRAINING_ROD.get(),
@@ -86,6 +87,7 @@ public class StardewValley {
 
                 MenuScreens.register(ModMenuTypes.KEG_MENU.get(), KegScreen::new);
                 MenuScreens.register(ModMenuTypes.CRYSTALARIUM_MENU.get(), CrystalariumScreen::new);
+                MenuScreens.register(ModMenuTypes.PRESERVES_JAR_MENU.get(), PreservesJarScreen::new);
             });
         }
 
